@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -11,32 +11,32 @@ nav{
     height: 10vh;
 }
 
-.logo{
+.logo {
 
-    width:40vh;
+    width: 40vh;
     height: 15vh;
 }
 
-.logo img{
+.logo img {
     position: relative;
     top: 30px;
     width: 100%;
     height: 100%;
 }
 
-.nav-list{
+.nav-list {
     list-style: none;
     display: flex;
 }
 
-.nav-list li{
+.nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
 }
 
 
 
-a{
+a {
     color: white;
     text-decoration: none;
     font-family: 'Nosifer', sans-serif;
@@ -44,34 +44,102 @@ a{
     font-size: 1.2em;
 }
 
-a:hover{
+a:hover {
     color: darkred;
     text-decoration: underline;
 }
 
-.mobile-menu{
+.mobile-menu {
     display: none;
     cursor: pointer;
+    position: relative;
+    left: 60px;
 }
 
-.mobile-menu div{
+.mobile-menu div {
     width: 32px;
     height: 2px;
     background-color: white;
     margin: 8px;
+    transition: 0.3s;
 }
 
-main{
+main {
     background: url(../img/conanbg2.jpg) no-repeat center center;
     background-size: cover;
     height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-principal{
+    background: url(../img/pergaminho.jpg) no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   
+
 }
 
 @media (max-width: 999px) {
-    .nav-list{
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
         position: absolute;
-        top: 8vh;
+        top: 10vh;
         right: 0;
+        width: 30vw;
+        height: 50vh;
+        border-radius: 0px 0px 20px 20px;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+        border-radius: 20px;
+    }
+
+    .nav-list.ativada {
+        transform: translateX(0);
+    }
+
+    @keyframes animacaoLinks {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+    }
+
+    .mobile-menu.ativada .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+
+    .mobile-menu.ativada .line2 {
+        opacity: 0;
+    }
+
+    .mobile-menu.ativada .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
     }
 }
-
