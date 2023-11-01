@@ -4,7 +4,7 @@
 }
 
 body {
-    background: url(../img/conanbg2.jpg) no-repeat;
+    background: url(/img/conanbg2.jpg) no-repeat;
     background-size: cover;
     background-position-x: -900px;
 }
@@ -132,7 +132,7 @@ main {
 .conteudo-principal {
     width: 500px;
     height: 1000px;
-    background: url(../img/pergaminho3.jfif) center center no-repeat;
+    background: url(/img/pergaminho3.jfif) center center no-repeat;
     background-size: cover;
     border-radius: 20px;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
@@ -205,8 +205,11 @@ main {
 }
 
 .footer {
-    background: transparent;
-    width: 140vh;
-    height: 20vh;
-    margin: auto;
+    background: url(/img/pergaminho3.jfif) no-repeat;
+    background-size: cover;
+    width: 66vh;
+    height: 15vh;
+    margin:  20px auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
 }
