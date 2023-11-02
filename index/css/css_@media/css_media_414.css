@@ -1,22 +1,23 @@
-@media (max-width: 376px){
+@media (max-width: 416px){
     
-    body {
-        max-width: 375px;
+    body{
+        width: 416px;
     }
     
-    nav {
-        max-width: 375px;
+    nav{
+        width: 416px;
     }
 
     .logo{
         left: -20px;
     }
+
     .mobile-menu{
         left: -20px;
     }
 
     .nav-list{
-        top: 165px;
+        top: 166px;
     }
 
     .nav-list li a{
@@ -27,17 +28,23 @@
 
     #slider{
         width: 60vh;
-        height: 20vh;
+        height: 30vh;
         position: relative;
-        top: -75px;
+        top: -74px;
+        left: 18px;
+        border-radius: 0px;
         
     }
-    
+
     #slider div{
         width: 60vh;
-        height: 20vh;
+        height: 30vh;
     }
-    
+
+    #slider img{
+        border-radius: 0px;
+    }
+
     #slider h1{
         top: 4vh;
         left: 15vh;
@@ -46,22 +53,26 @@
 
     main{
         width: 360px;
-        height: 300vh;
+        height:310vh;
     }
 
     .conteudo-principal{
         width: 280px;
         height: 1660px;
         position: relative;
-        top: -70px;
+        top: -37px;
+        left: 21px;
     }
-
+    
     .emblema img{
         left: -76px;
     }
 
     .footer{
+        position: relative;
+        left: -6px;
         width: 45vh;
     }
+    
     
 }
