@@ -13,11 +13,12 @@
     }
     
     .logo{
-        width: 50%;
+        width: 30%;
+        left: -90px;
     }
     
     .nav-list{
-        width: 50%;
+        width: 45%;
     }
     
     .nav-list li{

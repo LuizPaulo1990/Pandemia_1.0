@@ -1,0 +1,69 @@
+@media (max-width: 376px){
+    
+    body {
+        max-width: 375px;
+    }
+    
+    nav {
+        max-width: 375px;
+    }
+
+    .logo{
+        left: -20px;
+    }
+    .mobile-menu{
+        left: -20px;
+    }
+
+    .nav-list{
+        top: 165px;
+    }
+
+    .nav-list li a{
+        position: relative;
+        left: 240px;
+        font-size: 0.7em;
+    }
+
+    #slider{
+        width: 60vh;
+        height: 20vh;
+        position: relative;
+        top: -75px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        transition: 5s;
+    }
+    
+    #slider div{
+        width: 60vh;
+        height: 20vh;
+    }
+    
+    #slider h1{
+        top: 4vh;
+        left: 15vh;
+        font-size: 1.8em;
+    }
+
+    main{
+        width: 360px;
+        height: 300vh;
+    }
+
+    .conteudo-principal{
+        width: 280px;
+        height: 1660px;
+        position: relative;
+        top: -70px;
+    }
+
+    .emblema img{
+        left: -76px;
+    }
+
+    .footer{
+        width: 45vh;
+    }
+    
+}

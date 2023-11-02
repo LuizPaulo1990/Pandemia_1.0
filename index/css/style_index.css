@@ -32,9 +32,9 @@ nav {
 
 .logo img {
     position: relative;
-    top: 10px;
+    top: -3px;
     width: 103vh;
-    height: 66vh;
+    height: 33vh;
 }
 
 .nav-list {
@@ -240,7 +240,7 @@ main {
 
 .logo-footer img{
     object-fit: contain;
-    height: 36vh;
+    height: 16vh;
 }
 
 .text-footer{
