@@ -1,0 +1,38 @@
+@media (max-width: 1024px){
+
+    body{
+        max-width: 1024px;
+        background-position-x: -2100px;
+        background-position-y: 100px;
+    }
+    nav{
+        max-width: 1024px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .logo{
+        width: 50%;
+    }
+    
+    .nav-list{
+        width: 50%;
+    }
+    
+    .nav-list li{
+        position: relative;
+        left: -250px;
+        margin-left: 20px;
+    }
+    
+    a{
+        font-size: 1em;
+    }
+    
+    main{
+        height: 220vh;
+    }
+
+}
+

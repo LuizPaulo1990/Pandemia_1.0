@@ -5,17 +5,15 @@
         background-position-x: -1850px;
     }
 
-    
-
     .nav-list {
         position: absolute;
         z-index: 2;
-        top: 10vh;
+        top: 20vh;
         right: 0;
         width: 30vw;
         height: 50vh;
         border-radius: 0px 0px 20px 20px;
-        background: #23232e;
+        background: #171219;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -23,9 +21,10 @@
         transition: transform 0.3s ease-in;
     }
 
-    .nav-list li {
-        margin-left: 0;
-        opacity: 0;
+    .nav-list li a {
+        position: relative;
+        right: -250px;
+
     }
 
     .mobile-menu {
@@ -60,5 +59,17 @@
 
     .mobile-menu.ativada .line3 {
         transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+    #slider {
+        width: 90vh;
+    }
+    
+    #slider div {
+        width:90vh;
+    }
+    
+    #slider h1 {
+        left: 25vh;
     }
 }

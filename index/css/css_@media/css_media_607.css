@@ -1,0 +1,45 @@
+@media (max-width: 607px){
+
+    body {
+        max-width: 600px;
+    }
+    
+    nav {
+        max-width: 600px;
+    }
+    
+    .logo {
+        position: relative;
+        left: 60px;
+        width: 50%;
+    }
+    
+    .nav-list li a {
+        position: relative;
+        right: -250px;
+    
+    }
+    
+    .mobile-menu{
+        left: 40px;
+    }
+    
+    #slider {
+        width: 60vh;
+    }
+    
+    #slider div {
+        width: 60vh;
+    }
+    
+    #slider h1 {
+        left: 13vh;
+    }
+    
+    main {
+        height: 190vh;
+    }
+    
+
+}
+
