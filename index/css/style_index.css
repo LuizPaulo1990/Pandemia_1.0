@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 body {
@@ -8,6 +9,7 @@ body {
     background-size: cover;
     background-position-x: -1350px;
     transition: 5s;
+    
 }
 
 nav {

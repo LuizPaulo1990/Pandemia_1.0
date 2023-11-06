@@ -1,9 +1,9 @@
-@media (max-width: 365px) {
+@media (max-width: 360px) {
 
 
     body {
-        width: 360px;
-        background-position-x: -2250px;
+        max-width: 360px;
+        background-position-x: -3000px;
     }
 
     nav {
@@ -26,10 +26,13 @@
 
     .nav-list {
         width: 200px;
+        left: 160px;
+        top: 145px;
     }
 
     .nav-list li {
         margin-left: 4px;
+
     }
 
     .nav-list li a {
