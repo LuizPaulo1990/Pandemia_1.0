@@ -1,0 +1,79 @@
+@media (max-width: 365px) {
+
+
+    body {
+        width: 360px;
+        background-position-x: -2250px;
+    }
+
+    nav {
+        width: 360px;
+    }
+
+    .logo {
+        left: -40px;
+
+    }
+
+    .logo img {
+        width: 80vh;
+        height: 25vh;
+    }
+
+    .mobile-menu {
+        left: -10px;
+    }
+
+    .nav-list {
+        width: 200px;
+    }
+
+    .nav-list li {
+        margin-left: 4px;
+    }
+
+    .nav-list li a {
+        font-size: 1.2em;
+    }
+
+    #slider {
+        width: 360px;
+        height: 35vh;
+        border-radius: 0px;
+        top:-11px;
+    }
+
+    #slider div {
+        width: 360px;
+        height: 35vh;
+    }
+
+    #slider h1 {
+        top: 12vh;
+        left: 4vh;
+    }
+
+    #slider img {
+        border-radius: 0px;
+    }
+
+    main{
+        width: 360px;
+        height: 290vh;
+    }
+
+    .conteudo-principal{
+        width: 300px;
+        height: 1550px;
+    }
+
+    .emblema img{
+        left: -55px;
+    }
+
+    .footer{
+        width: 320px;
+        height: 18vh;
+    }
+
+}
