@@ -1,0 +1,42 @@
+@media (max-width: 1029px) {
+
+    nav {
+        width: 1024px;
+    }
+
+    .logo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .nav-list li {
+        letter-spacing: 3px;
+        margin-right: 5px;
+    }
+
+    .nav-list li a {
+        font-size: 1em;
+    }
+
+    #slider{
+        width: 1024px;
+        height: 400px;
+        margin-top: 0px;
+        border-radius: 0px;
+        margin-bottom: 30px;
+        transition: 3s;
+    }
+    
+    #slider div{
+        width: 1024px;
+        height: 400px;
+        transition: 3s;
+    }
+    
+
+    #slider img{
+        border-radius: 0px;
+    }
+    
+
+}

@@ -6,8 +6,6 @@
  const linkContato = document.getElementById('contato');
  const navlinks = document.querySelectorAll('#lista-links li a');
 
-
- 
 linkInicio.addEventListener("click",() => {
     
     navlinks.forEach(link =>{
