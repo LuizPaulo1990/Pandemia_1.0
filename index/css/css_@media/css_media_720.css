@@ -1,7 +1,7 @@
-@media (max-width: 773px) {
+@media (max-width: 725px) {
 
     nav {
-        width: 768px;
+        width: 720px;
     }
 
     .logo {
@@ -24,35 +24,35 @@
     }
 
     #slider {
-        width: 768px;
+        width: 720px;
         height: 350px;
         border-radius: 0px;
         margin-top: 0px;
     }
 
     #slider div {
-        width: 768px;
+        width: 720px;
         height: 350px;
 
     }
 
-    #slider img{
+    #slider img {
         border-radius: 0px;
     }
 
-    #slider h1{
+    #slider h1 {
         top: 124px;
         left: 180px;
         font-size: 3em;
     }
 
-    
 
-    .emblema{
+
+    .emblema {
         width: 200px;
         height: 200px;
         margin-left: 155px;
     }
 
-    
+
 }
