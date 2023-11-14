@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background: url(../../img/conanbg2.jpg) no-repeat;
+    background-size: cover;
+    transition: 5s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #171219;
+    height: 200px;
+    transition: 5s;
+}
+
+.logo {
+    width: 250px;
+    height: 250px;
+    transition: 5s;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin-top: 120px;
+    transition: 5s;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.nav-list li a {
+    color: #DC143C;
+    text-decoration: none;
+    font-family: 'Nosifer', sans-serif;
+    transition: 1s ease-in-out;
+    font-size: 1.5em;
+    transition: .5s;
+}
+
+.nav-list li a:hover {
+    color: beige;
+    text-decoration: underline;
+}
+
+.nav-list li a.link-ativado{
+    color: beige;
+    text-decoration: underline;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    left: 60px;
+    transition: 5s;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background-color: white;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+#slider{
+    width: 1000px;
+    height: 400px;
+    margin-top: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    transition: 3s;
+}
+
+#slider div{
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+    transition: 3s;
+}
+
+#slider h1{
+    position: absolute;
+    top: 176px;
+    left: 363px;
+    z-index: 1;
+    color: rgba(139, 0, 0, 0.783);
+    font-size: 2.5em;
+    font-family: 'Nosifer', sans-serif;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+#slider img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    opacity: 0;
+    transition: 2s ease-in-out;
+}
+
+#slider img.selecionada{
+    opacity: 1;
+}
+
+#slider h1.selecionado{
+    opacity: 1;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 5s;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    background: url(/img/pergaminho3.jfif) center center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+    padding: 15px;
+}
+
+.titulo-principal{
+    font-family: 'Nosifer', sans-serif;
+    color: #DC143C;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.btn{
+    background-color: black;
+    width: 160px;
+    height: 45px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 0 rgb(54, 52, 52);
+}
+
+.btn:hover:active{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    box-shadow: none;
+    
+}
+
+#btn-conteudo-gerais {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background:url(/img/pergaminho3.jfif) no-repeat center center;
+    background-size: cover;
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+    position: absolute;
+    top: 450px;
+    z-index: 2;
+    
+}
+#btn-conteudo-gerais.ativado{
+    display: flex;
+}
+
+#btn-fecha{
+    position: relative;
+    top: 12px;
+    left: 221px;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    font-family: 'Nosifer', sans-serif;
+    color: darkred;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 rgb(54, 52, 52);
+    border: none;
+
+}
+
+#btn-fecha:active{
+    top: 14px;
+    left: 223px;
+    box-shadow: none; 
+}
+
+#texto-regras{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    overflow-y: scroll;
+}
+
+#texto-regras::-webkit-scrollbar{
+    width: 10px;
+}
+#texto-regras::-webkit-scrollbar-track{
+    background: black;
+    border-radius: 5px;
+}
+
+#texto-regras::-webkit-scrollbar-thumb{
+    background-color: darkred;
+    border-radius: 5px;
+}
+
+#texto-regras h1{
+    font-family: 'Nosifer', sans-serif;
+    color: darkred;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#texto-regras h2{
+    font-family: Black Ops One;
+    font-size: 1.5em;
+    margin: 20px;
+    text-decoration: underline;
+}
+
+#texto-regras p {
+    font-family: Black Ops One;
+    color: crimson;
+    margin-bottom: 20px;
+    margin-left: 45px;
+    width: 80%;
+}
+
+#btn-conteudo-construcao{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background:url(/img/pergaminho3.jfif) no-repeat center center;
+    background-size: cover;
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+    position: absolute;
+    top: 450px;
+    z-index: 2;
+}
+
+#btn-conteudo-construcao.ativado{
+    display: flex;
+}
+
+#btn-fecha-construcao{
+    position: relative;
+    top: 12px;
+    left: 221px;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    font-family: 'Nosifer', sans-serif;
+    color: darkred;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 rgb(54, 52, 52);
+    border: none;
+}
+
+#btn-fecha-construcao:active{
+    top: 14px;
+    left: 223px;
+    box-shadow: none;
+}
+
+#texto-construcao{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    overflow-y: scroll;
+}
+
+#texto-construcao::-webkit-scrollbar{
+    width: 10px;
+}
+#texto-construcao::-webkit-scrollbar-track{
+    background: black;
+    border-radius: 5px;
+}
+
+#texto-construcao::-webkit-scrollbar-thumb{
+    background-color: darkred;
+    border-radius: 5px;
+}
+
+#texto-construcao h1{
+    font-family: 'Nosifer', sans-serif;
+    color: darkred;
+    font-size: 2em;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: 50px;
+}
+
+#texto-construcao h2{
+    font-family: Black Ops One;
+    font-size: 1.5em;
+    margin: 20px;
+    text-decoration: underline;
+}
+
+#texto-construcao p {
+    font-family: Black Ops One;
+    color: crimson;
+    margin-bottom: 20px;
+    margin-left: 45px;
+    width: 80%;
+}
+
+.texto-btn{
+    font-family: 'Nosifer', sans-serif;
+    color: #DC143C;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(/img/pergaminho3.jfif) no-repeat;
+    background-size: cover;
+    width: 540px;
+    height: 130px;
+    margin:  20px auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+}
+
+.logo-footer{
+    width: 150px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo-footer img{
+    width: 100%;
+    height: auto;
+}
+
+.text-footer{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text-footer p{
+    margin: 5px auto;
+}
+
+.text-footer img{
+    width: 50px;
+}

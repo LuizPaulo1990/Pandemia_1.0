@@ -1,0 +1,112 @@
+@media (max-width: 416px) {
+
+    nav {
+        width: 411px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .mobile-menu {
+        left: 20px;
+    }
+
+    .nav-list {
+        width: 150px;
+        height: 300px;
+    }
+
+    .nav-list li a {
+        font-size: 0.8em;
+        right: -240px;
+    }
+
+    #slider {
+        width: 411px;
+        height: 200px;
+        border-radius: 0px;
+        margin-top: 0px;
+    }
+
+    #slider div {
+        width: 411px;
+        height: 200px;
+
+    }
+
+    #slider img{
+        border-radius: 0px;
+    }
+
+    #slider h1{
+        top: 80px;
+        left: 90px;
+        font-size: 1.5em;
+    }
+
+    .conteudo-principal {
+        width: 325px;
+    }
+
+    #btn-conteudo-gerais {
+        width: 360px;
+        height: 450px;
+        top: 350px;
+    }
+
+    #btn-fecha{
+        left: 120px;
+    }
+
+    #btn-fecha:active{
+        left: 122px;
+    }
+
+    #texto-regras h1{
+        font-size: 1.5em;
+    }
+    
+    #texto-regras h2{
+        font-size: 1.1em;
+    }
+    
+    #texto-regras p {
+        font-size: 0.8em;
+        margin-left: 30px;
+    }
+
+    #btn-conteudo-construcao{
+        width: 360px;
+        height: 450px;
+        top: 350px;
+    }
+
+    #btn-fecha-construcao{
+        left: 120px;
+    }
+
+    #btn-fecha-construcao:active{
+        left: 123px;
+    }
+
+    #texto-construcao h1{
+        margin-left: 35px;
+        font-size: 1.5em;
+    }
+    
+    #texto-construcao h2{
+        font-size: 1.1em;
+    }
+    
+    #texto-construcao p {
+        font-size: 0.8em;
+        margin-left: 30px;
+    }
+
+    .footer{
+        width: 356px;
+    }
+
+}
