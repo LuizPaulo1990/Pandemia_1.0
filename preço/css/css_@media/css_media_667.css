@@ -1,0 +1,16 @@
+@media (max-width: 672px) {
+
+    nav {
+        width: 667px;
+    }
+
+    #slider {
+        width: 667px;
+    }
+
+    #slider div {
+        width: 667px;
+    }
+
+    
+}

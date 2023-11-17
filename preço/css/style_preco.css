@@ -1,0 +1,685 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background: url(../../img/conanbg2.jpg) no-repeat;
+    background-size: cover;
+    transition: 5s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #171219;
+    height: 200px;
+    transition: 5s;
+}
+
+.logo {
+    width: 250px;
+    height: 250px;
+    transition: 5s;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin-top: 120px;
+    transition: 5s;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.nav-list li a {
+    color: #DC143C;
+    text-decoration: none;
+    font-family: 'Nosifer', sans-serif;
+    transition: 1s ease-in-out;
+    font-size: 1.5em;
+    transition: .5s;
+}
+
+.nav-list li a:hover {
+    color: beige;
+    text-decoration: underline;
+}
+
+.nav-list li a.link-ativado{
+    color: beige;
+    text-decoration: underline;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    left: 60px;
+    transition: 5s;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background-color: white;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+#slider{
+    width: 1000px;
+    height: 400px;
+    margin-top: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    transition: 3s;
+}
+
+#slider div{
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+    transition: 3s;
+}
+
+#slider h1{
+    position: absolute;
+    top: 176px;
+    left: 363px;
+    z-index: 1;
+    color: rgba(139, 0, 0, 0.783);
+    font-size: 2.5em;
+    font-family: 'Nosifer', sans-serif;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+#slider img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    opacity: 0;
+    transition: 2s ease-in-out;
+}
+
+#slider img.selecionada{
+    opacity: 1;
+}
+
+#slider h1.selecionado{
+    opacity: 1;
+}
+
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 5s;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    background: url(/img/pergaminho3.jfif) center center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+    padding: 15px;
+}
+
+.titulo-principal{
+    font-family: 'Nosifer', sans-serif;
+    background: linear-gradient(to bottom,  #171219 64%, #DC143C 0);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+#card-pets{
+    background-color: #171219;
+    width: 220px;
+    height: 220px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 3;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+#card-pets h2{
+    background: linear-gradient(to bottom,  #f3f3f3 64%, #DC143C 0);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-family: 'Nosifer', sans-serif;
+    z-index: 3;
+}
+
+#card-pets img{
+    width: 60px;
+    margin-top: 30px;
+}
+
+#card-pets:active{
+    border-radius: 20px 0px 0px 20px;
+    transform: translateX(-100px);
+}
+
+#texto-pets{
+    background-color: aliceblue;
+    width: 220px;
+    height: 220px;
+    border-radius:  20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: auto;
+    position: absolute;
+    top: 774px;
+    transition: 1s ease;
+    opacity: 0;
+   
+}
+
+#texto-pets.ativado{
+    transform: translateX(110px);
+    border-radius:  0px 20px 20px 0px;
+    opacity: 1;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+}
+
+#texto-pets p{
+    font-family: Black Ops One;
+    font-size: 0.9em;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#texto-pets p span{
+    color: goldenrod;
+}
+
+#texto-pets p span.destaque{
+    color: chocolate;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+#card-armas{
+    background-color: #171219;
+    width: 220px;
+    height: 130px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 3;
+    transition: .5s ease;
+    cursor: pointer; 
+}
+
+#card-armas h2{
+    background: linear-gradient(to bottom,  #f3f3f3 64%, #DC143C 0);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-family: 'Nosifer', sans-serif;
+    z-index: 3;
+}
+
+#card-armas img{
+    width: 80px;
+    margin-top: 5px;
+}
+
+#card-armas:active{
+    border-radius: 20px 0px 0px 20px;
+    transform: translateX(-100px);
+}
+
+#texto-armas{
+    background-color: aliceblue;
+    width: 220px;
+    height: 130px;
+    border-radius:  20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: auto;
+    position: absolute;
+    top: 1014px;
+    transition: 1s ease;
+    opacity: 0;
+   
+}
+
+#texto-armas.ativado{
+    transform: translateX(110px);
+    border-radius:  0px 20px 20px 0px;
+    opacity: 1;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+}
+
+#texto-armas p{
+    font-family: Black Ops One;
+    font-size: 0.9em;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#texto-armas p span{
+    color: goldenrod;
+}
+
+
+
+
+
+
+
+
+#card-armaduras{
+    background-color: #171219;
+    width: 220px;
+    height: 130px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 3;
+    transition: .5s ease;
+    cursor: pointer; 
+}
+
+#card-armaduras h2{
+    background: linear-gradient(to bottom,  #f3f3f3 64%, #DC143C 0);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-family: 'Nosifer', sans-serif;
+    z-index: 3;
+    font-size: 1.4em;
+}
+
+#card-armaduras img{
+    width: 80px;
+    margin-top: 5px;
+}
+
+#card-armaduras:active{
+    border-radius: 20px 0px 0px 20px;
+    transform: translateX(-100px);
+}
+
+#texto-armaduras{
+    background-color: aliceblue;
+    width: 220px;
+    height: 128px;
+    border-radius:  20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: auto;
+    position: absolute;
+    top: 1165px;
+    transition: 1s ease;
+    opacity: 0;
+   
+}
+
+#texto-armaduras.ativado{
+    transform: translateX(110px);
+    border-radius:  0px 20px 20px 0px;
+    opacity: 1;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+}
+
+#texto-armaduras p{
+    font-family: Black Ops One;
+    font-size: 0.9em;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#texto-armaduras p span{
+    color: goldenrod;
+}
+
+
+
+
+
+
+
+#card-ferramentas{
+    background-color: #171219;
+    width: 220px;
+    height: 130px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 3;
+    transition: .5s ease;
+    cursor: pointer; 
+}
+
+#card-ferramentas h2{
+    background: linear-gradient(to bottom,  #f3f3f3 64%, #DC143C 0);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-family: 'Nosifer', sans-serif;
+    z-index: 3;
+    font-size: 1.2em;
+}
+
+#card-ferramentas img{
+    width: 80px;
+    margin-top: 5px;
+}
+
+#card-ferramentas:active{
+    border-radius: 20px 0px 0px 20px;
+    transform: translateX(-100px);
+}
+
+#texto-ferramentas{
+    background-color: aliceblue;
+    width: 220px;
+    height: 130px;
+    border-radius:  20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: auto;
+    position: absolute;
+    top: 1314px;
+    transition: 1s ease;
+    opacity: 0;
+   
+}
+
+#texto-ferramentas.ativado{
+    transform: translateX(110px);
+    border-radius:  0px 20px 20px 0px;
+    opacity: 1;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+}
+
+#texto-ferramentas p{
+    font-family: Black Ops One;
+    font-size: 0.9em;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#texto-ferramentas p span{
+    color: goldenrod;
+}
+
+
+
+
+
+
+
+#card-lacaios{
+    background-color: #171219;
+    width: 270px;
+    height: 480px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 3;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+#card-lacaios:active{
+    border-radius: 20px 0px 0px 20px;
+    transform: translateX(-135px);
+}
+
+#card-lacaios h2{
+    background: linear-gradient(to bottom,  #f3f3f3 64%, #DC143C 0);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-family: 'Nosifer', sans-serif;
+    z-index: 3;
+}
+
+#card-lacaios img{
+    width: 100px;
+    margin-top: 50px;
+}
+
+#texto-lacaios{
+    background-color: aliceblue;
+    width: 270px;
+    height: 478px;
+    border-radius:  20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: auto;
+    position: absolute;
+    top: 1465px;
+    transition: 1s ease;
+    opacity: 1;
+   
+}
+
+#texto-lacaios.ativado{
+    transform: translateX(135px);
+    border-radius:  0px 20px 20px 0px;
+    opacity: 1;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+}
+
+#texto-lacaios p{
+    font-family: Black Ops One;
+    font-size: 0.9em;
+    width: 80%;
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+
+#texto-lacaios p span{
+    color: goldenrod;
+}
+
+#texto-lacaios p span.destaque{
+    color: chocolate;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+#card-diversos{
+    background-color: #171219;
+    width: 270px;
+    height: 525px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 3;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+#card-diversos:active{
+    border-radius: 20px 0px 0px 20px;
+    transform: translateX(-135px);
+}
+
+#card-diversos h2{
+    background: linear-gradient(to bottom,  #f3f3f3 64%, #DC143C 0);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-family: 'Nosifer', sans-serif;
+    z-index: 3;
+}
+
+#card-diversos img{
+    width: 100px;
+    margin-top: 50px;
+}
+
+#texto-diversos{
+    background-color: aliceblue;
+    width: 270px;
+    height: 524px;
+    border-radius:  20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: auto;
+    position: absolute;
+    top: 1965px;
+    transition: 1s ease;
+    opacity: 1;
+   
+}
+
+#texto-diversos.ativado{
+    transform: translateX(135px);
+    border-radius:  0px 20px 20px 0px;
+    opacity: 1;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+}
+
+#texto-diversos p{
+    font-family: Black Ops One;
+    font-size: 0.9em;
+    width: 80%;
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+
+#texto-diversos p span{
+    color: goldenrod;
+}
+
+#texto-diversos p span.destaque{
+    color: chocolate;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(/img/pergaminho3.jfif) no-repeat;
+    background-size: cover;
+    width: 540px;
+    height: 130px;
+    margin:  20px auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+}
+
+.logo-footer{
+    width: 150px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo-footer img{
+    width: 100%;
+    height: auto;
+}
+
+.text-footer{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text-footer p{
+    margin: 5px auto;
+}
+
+.text-footer img{
+    width: 50px;
+}
