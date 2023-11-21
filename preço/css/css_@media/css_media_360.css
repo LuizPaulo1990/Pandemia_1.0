@@ -26,6 +26,17 @@
         right: -240px;
     }
 
+
+
+
+
+
+
+
+
+
+
+
     #slider {
         width: 360px;
         height: 200px;
@@ -49,7 +60,122 @@
         font-size: 1.5em;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+    #card-pets{
+        width: 150px;
+        height: 270px;
+    }
+   
     
+    #card-pets img{
+        width: 100px;
+    }
+
+    #card-pets:active{
+        transform: translateX(-75px);
+    }
+    
+    
+    #texto-pets{
+        width: 130px;
+        height: 268px;
+        top: 545px;
+    }
+    
+   
+    #texto-pets p{
+        margin-bottom: 5px;
+    }
+
+    #texto-pets.ativado{
+        transform: translateX(65px);
+    }
+
+
+
+
+
+
+
+
+
+
+
+    #card-armas{
+        width: 150px;
+    }
+    
+    
+    #card-armas:active{
+        transform: translateX(-75px);
+    }
+    
+    #texto-armas{
+        width:150px;
+        height: 128px;
+        top: 836px;
+    }
+    
+    #texto-armas.ativado{
+        transform: translateX(75px);
+    }
+    
+    
+
+
+
+
+
+
+    #card-armaduras{
+        width: 165px; 
+    }
+    
+    #card-armaduras h2{
+        font-size: 1.1em;
+    }
+    
+    #card-armaduras:active{
+        transform: translateX(-70px);
+    }
+    
+    #texto-armaduras{
+        width: 165px;
+        height: 128px;
+        top: 985px;
+       
+    }
+    
+    #texto-armaduras.ativado{
+        transform: translateX(70px);
+    }
+    
+    #texto-armaduras p{
+        margin-bottom: 5px;
+        margin-left: 40px;
+    }
+    
+    #texto-armaduras p span{
+        color: goldenrod;
+    }
+    
+    
+    
+   
+
+
+
+
 
     .footer{
         width: 276px;
