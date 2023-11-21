@@ -196,7 +196,7 @@ main {
     margin-top: 30px;
 }
 
-#card-pets:active{
+#card-pets.ativado{
     border-radius: 20px 0px 0px 20px;
     transform: translateX(-100px);
 }
@@ -276,7 +276,7 @@ main {
     margin-top: 5px;
 }
 
-#card-armas:active{
+#card-armas.ativado{
     border-radius: 20px 0px 0px 20px;
     transform: translateX(-100px);
 }
@@ -353,7 +353,7 @@ main {
     margin-top: 5px;
 }
 
-#card-armaduras:active{
+#card-armaduras.ativado{
     border-radius: 20px 0px 0px 20px;
     transform: translateX(-100px);
 }
@@ -429,7 +429,7 @@ main {
     margin-top: 5px;
 }
 
-#card-ferramentas:active{
+#card-ferramentas.ativado{
     border-radius: 20px 0px 0px 20px;
     transform: translateX(-100px);
 }
@@ -491,7 +491,7 @@ main {
     cursor: pointer;
 }
 
-#card-lacaios:active{
+#card-lacaios.ativado{
     border-radius: 20px 0px 0px 20px;
     transform: translateX(-135px);
 }
@@ -573,7 +573,7 @@ main {
     cursor: pointer;
 }
 
-#card-diversos:active{
+#card-diversos.ativado{
     border-radius: 20px 0px 0px 20px;
     transform: translateX(-135px);
 }

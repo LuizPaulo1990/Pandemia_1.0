@@ -1,9 +1,6 @@
 const cardPets = document.getElementById('card-pets');
 const cardTextoPets = document.getElementById('texto-pets');
 
-const cardLacaios = document.getElementById('card-lacaios');
-const cardTextoLacaios = document.getElementById('texto-lacaios');
-
 const cardArmas = document.getElementById('card-armas');
 const cardTextoArmas = document.getElementById('texto-armas');
 
@@ -13,140 +10,90 @@ const cardTextoArmaduras = document.getElementById('texto-armaduras');
 const cardFerramentas = document.getElementById('card-ferramentas');
 const cardTextoFerramentas = document.getElementById('texto-ferramentas');
 
+const cardLacaios = document.getElementById('card-lacaios');
+const cardTextoLacaios = document.getElementById('texto-lacaios');
+
 const cardDiversos = document.getElementById('card-diversos');
 const cardTextoDiversos = document.getElementById('texto-diversos');
 
 const larguraPagina = screen.width;
 
+function ativaCard(cardPrincipal, cardSecundario) {
+    cardSecundario.classList.add('ativado');
+    cardPrincipal.classList.add('ativado');
+}
+
+function desativaCard(cardPrincipal, cardSecundario) {
+    cardSecundario.classList.remove('ativado');
+    cardPrincipal.classList.remove('ativado');
+}
 
 if (larguraPagina > 999) {
 
-    /*faz  animação do card texto-pets andar para direita e aparecer */
+    /*faz a animação do card pets usando mouse  */
+    cardPets.addEventListener('mousedown', () => ativaCard(cardPets, cardTextoPets));
+    cardPets.addEventListener('mouseup', () => desativaCard(cardPets, cardTextoPets));
+    cardTextoPets.addEventListener('mouseup', () => desativaCard(cardPets, cardTextoPets));
 
-    cardPets.addEventListener('mousedown', () => {
-        cardTextoPets.classList.add('ativado');
-    })
+    /*faz  animação do card armas usando mouse */
+    cardArmas.addEventListener('mousedown', () => ativaCard(cardArmas, cardTextoArmas));
+    cardArmas.addEventListener('mouseup', () => desativaCard(cardArmas, cardTextoArmas));
+    cardTextoArmas.addEventListener('mouseup', () => desativaCard(cardPets, cardTextoPets));
 
-    cardPets.addEventListener('mouseup', () => {
-        cardTextoPets.classList.remove('ativado');
-    })
+    /*faz  animação do card  armaduras usando mouse */
+    cardArmaduras.addEventListener('mousedown', () => ativaCard(cardArmaduras, cardTextoArmaduras));
+    cardArmaduras.addEventListener('mouseup', () => desativaCard(cardArmaduras, cardTextoArmaduras));
+    cardTextoArmaduras.addEventListener('mouseup', () => desativaCard(cardArmaduras, cardTextoArmaduras));
 
-    cardTextoPets.addEventListener('mouseup', () => {
-        cardTextoPets.classList.remove('ativado');
-    })
+    /*faz  animação do card  ferramentas usando mouse */
+    cardFerramentas.addEventListener('mousedown', () => ativaCard(cardFerramentas, cardTextoFerramentas));
+    cardFerramentas.addEventListener('mouseup', () => desativaCard(cardFerramentas, cardTextoFerramentas));
+    cardTextoFerramentas.addEventListener('mouseup', () => desativaCard(cardFerramentas, cardTextoFerramentas));
 
+    /*faz  animação do card  lacaios usando mouse */
+    cardLacaios.addEventListener('mousedown', () => ativaCard(cardLacaios, cardTextoLacaios));
+    cardLacaios.addEventListener('mouseup', () => desativaCard(cardLacaios, cardTextoLacaios));
+    cardTextoLacaios.addEventListener('mouseup', () => desativaCard(cardLacaios, cardTextoLacaios));
 
-    /*faz  animação do card texto-armas andar para direita e aparecer */
-
-    cardArmas.addEventListener('mousedown', () => {
-        cardTextoArmas.classList.add('ativado');
-    })
-
-    cardArmas.addEventListener('mouseup', () => {
-        cardTextoArmas.classList.remove('ativado');
-    })
-
-    cardTextoArmas.addEventListener('mouseup', () => {
-        cardTextoArmas.classList.remove('ativado');
-    })
-
-
-    /*faz  animação do card texto-armaduras andar para direita e aparecer */
-
-    cardArmaduras.addEventListener('mousedown', () => {
-        cardTextoArmaduras.classList.add('ativado');
-    })
-
-    cardArmaduras.addEventListener('mouseup', () => {
-        cardTextoArmaduras.classList.remove('ativado');
-    })
-
-    cardTextoArmaduras.addEventListener('mouseup', () => {
-        cardTextoArmaduras.classList.remove('ativado');
-    })
-
-
-    /*faz  animação do card texto-ferramentas andar para direita e aparecer */
-
-    cardFerramentas.addEventListener('mousedown', () => {
-        cardTextoFerramentas.classList.add('ativado');
-    })
-
-    cardFerramentas.addEventListener('mouseup', () => {
-        cardTextoFerramentas.classList.remove('ativado');
-    })
-
-    cardTextoFerramentas.addEventListener('mouseup', () => {
-        cardTextoFerramentas.classList.remove('ativado');
-    })
-
-
-
-    /*faz  animação do card texto-lacaios andar para direita e aparecer */
-
-    cardLacaios.addEventListener('mousedown', () => {
-        cardTextoLacaios.classList.add('ativado');
-    })
-
-    cardLacaios.addEventListener('mouseup', () => {
-        cardTextoLacaios.classList.remove('ativado');
-    })
-
-    cardTextoLacaios.addEventListener('mouseup', () => {
-        cardTextoLacaios.classList.remove('ativado');
-    })
-
-
-    /*faz  animação do card texto-diversos andar para direita e aparecer */
-
-    cardDiversos.addEventListener('mousedown', () => {
-        cardTextoDiversos.classList.add('ativado');
-    })
-
-    cardDiversos.addEventListener('mouseup', () => {
-        cardTextoDiversos.classList.remove('ativado');
-    })
-
-    cardTextoDiversos.addEventListener('mouseup', () => {
-        cardTextoDiversos.classList.remove('ativado');
-    })
-
+    /*faz  animação do card  diversos usando mouse */
+    cardDiversos.addEventListener('mousedown', () => ativaCard(cardDiversos, cardTextoDiversos));
+    cardDiversos.addEventListener('mouseup', () => desativaCard(cardDiversos, cardTextoDiversos));
+    cardTextoDiversos.addEventListener('mouseup', () => desativaCard(cardDiversos, cardTextoDiversos));
 
 } else {
+    /*animações do cards usando o touch em telas portateis */
 
-    /*faz  animação do card texto-pets andar para direita e aparecer */
+    /*faz a animação do card pets usando touch  */
+    cardPets.addEventListener('touchstart', () => ativaCard(cardPets, cardTextoPets));
+    cardPets.addEventListener('touchend', () => setTimeout(() => desativaCard(cardPets, cardTextoPets), 5000));
+    cardTextoPets.addEventListener('touchend', () => setTimeout(() => desativaCard(cardPets, cardTextoPets), 5000));
 
-    cardPets.addEventListener('touchstart', () => {
-        cardTextoPets.classList.add('ativado');
-        console.log('1')
-    })
+    /*faz a animação do card armas usando touch  */
+    cardArmas.addEventListener('touchstart', () => ativaCard(cardArmas, cardTextoArmas));
+    cardArmas.addEventListener('touchend', () => setTimeout(() => desativaCard(cardArmas, cardTextoArmas), 3000));
+    cardTextoArmas.addEventListener('touchend', () => setTimeout(() => desativaCard(cardArmas, cardTextoArmas), 3000));
 
-    cardPets.addEventListener('touchend', () => {
-        cardTextoPets.classList.remove('ativado');
-        console.log('2')
-    })
+    /*faz a animação do card armaduras usando touch  */
+    cardArmaduras.addEventListener('touchstart', () => ativaCard(cardArmaduras, cardTextoArmaduras));
+    cardArmaduras.addEventListener('touchend', () => setTimeout(() => desativaCard(cardArmaduras, cardTextoArmaduras), 3000));
+    cardTextoArmaduras.addEventListener('touchend', () => setTimeout(() => desativaCard(cardArmaduras, cardTextoArmaduras), 3000));
 
-    /*faz  animação do card texto-armas andar para direita e aparecer */
+    /*faz a animação do card ferramentas usando touch  */
+    cardFerramentas.addEventListener('touchstart', () => ativaCard(cardFerramentas, cardTextoFerramentas));
+    cardFerramentas.addEventListener('touchend', () => setTimeout(() => desativaCard(cardFerramentas, cardTextoFerramentas), 3000));
+    cardTextoFerramentas.addEventListener('touchend', () => setTimeout(() => desativaCard(cardFerramentas, cardTextoFerramentas), 3000));
 
-    cardArmas.addEventListener('touchstart', () => {
-        cardTextoArmas.classList.add('ativado');
-    })
+    /*faz a animação do card lacaios usando touch  */
+    cardLacaios.addEventListener('touchstart', () => ativaCard(cardLacaios, cardTextoLacaios));
+    cardLacaios.addEventListener('touchend', () => setTimeout(() => desativaCard(cardLacaios, cardTextoLacaios), 3000));
+    cardTextoLacaios.addEventListener('touchend', () => setTimeout(() => desativaCard(cardLacaios, cardTextoLacaios), 3000));
 
-    cardArmas.addEventListener('touchend', () => {
-        cardTextoArmas.classList.remove('ativado');
-    })
-
-    /*faz  animação do card texto-armaduras andar para direita e aparecer */
-
-    cardArmaduras.addEventListener('touchstart', () => {
-        cardTextoArmaduras.classList.add('ativado');
-    })
-
-    cardArmaduras.addEventListener('touchend', () => {
-        cardTextoArmaduras.classList.remove('ativado');
-    })
-
-    
-   
+    /*faz a animação do card diversos usando touch  */
+    cardDiversos.addEventListener('touchstart', () => ativaCard(cardDiversos, cardTextoDiversos));
+    cardDiversos.addEventListener('touchend', () => setTimeout(() => desativaCard(cardDiversos, cardTextoDiversos), 3000));
+    cardTextoDiversos.addEventListener('touchend', () => setTimeout(() => desativaCard(cardDiversos, cardTextoDiversos), 3000));
 }
+
+
+
 

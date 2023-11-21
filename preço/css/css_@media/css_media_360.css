@@ -81,7 +81,7 @@
         width: 100px;
     }
 
-    #card-pets:active{
+    #card-pets.ativado{
         transform: translateX(-75px);
     }
     
@@ -116,7 +116,7 @@
     }
     
     
-    #card-armas:active{
+    #card-armas.ativado{
         transform: translateX(-75px);
     }
     
@@ -145,7 +145,7 @@
         font-size: 1.1em;
     }
     
-    #card-armaduras:active{
+    #card-armaduras.ativado{
         transform: translateX(-70px);
     }
     
