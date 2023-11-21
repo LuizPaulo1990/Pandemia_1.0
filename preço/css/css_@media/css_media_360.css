@@ -165,13 +165,132 @@
         margin-left: 40px;
     }
     
-    #texto-armaduras p span{
-        color: goldenrod;
+   
+
+
+
+
+
+
+
+
+    #card-ferramentas{
+        width: 165px;
+        height: 130px;
+    }
+    
+    #card-ferramentas h2{
+        font-size: .9em;
+    }
+    
+    #card-ferramentas img{
+        width: 80px;
+        margin-top: 5px;
+    }
+    
+    #card-ferramentas.ativado{
+        transform: translateX(-70px);
+    }
+    
+    #texto-ferramentas{
+        width: 165px;
+        height: 129px;
+        top: 1135px;
+        opacity: 0;
+       
+    }
+    
+    #texto-ferramentas.ativado{
+        transform: translateX(70px);
+    }
+    
+    #texto-ferramentas p{
+        font-size: 0.8em;
+        margin-bottom: 5px;
+        margin-left: 33px;
+    }
+
+
+
+
+
+
+
+    #card-lacaios{
+        width: 150px;
+        height: 410px;
+    }
+    
+    #card-lacaios.ativado{
+        transform: translateX(-75px);
+    }
+    
+    
+    #card-lacaios img{
+        width: 100px;
+        margin-top: 50px;
+    }
+    
+    #texto-lacaios{
+        width: 150px;
+        height: 408px;
+        top: 1285px;
+    }
+    
+    #texto-lacaios.ativado{
+        transform: translateX(75px);
+    }
+    
+    #texto-lacaios p{
+        font-size: 0.6em;
+        margin-bottom: 12px;
+        margin-left: 10px;
+    }
+
+
+
+
+
+
+
+    #card-diversos{
+        width: 150px;
+        height: 410px;
+    }
+    
+    #card-diversos.ativado{
+        transform: translateX(-75px);
+    }
+    
+    #card-diversos h2{
+       font-size: 1.1em;
+    }
+    
+    #card-diversos img{
+        width: 90px;
+        margin-top: 50px;
+    }
+    
+    #texto-diversos{
+        width: 150px;
+        height: 408px;
+        top: 1750px;
+    }
+    
+    #texto-diversos.ativado{
+        transform: translateX(75px);
+    }
+    
+    #texto-diversos p{
+        font-size: 0.6em;
+        margin-bottom: 12px;
+        margin-left: 10px;
     }
     
     
     
-   
+
+
 
 
 

@@ -65,8 +65,8 @@ if (larguraPagina > 999) {
 
     /*faz a animação do card pets usando touch  */
     cardPets.addEventListener('touchstart', () => ativaCard(cardPets, cardTextoPets));
-    cardPets.addEventListener('touchend', () => setTimeout(() => desativaCard(cardPets, cardTextoPets), 5000));
-    cardTextoPets.addEventListener('touchend', () => setTimeout(() => desativaCard(cardPets, cardTextoPets), 5000));
+    cardPets.addEventListener('touchend', () => setTimeout(() => desativaCard(cardPets, cardTextoPets), 3000));
+    cardTextoPets.addEventListener('touchend', () => setTimeout(() => desativaCard(cardPets, cardTextoPets), 3000));
 
     /*faz a animação do card armas usando touch  */
     cardArmas.addEventListener('touchstart', () => ativaCard(cardArmas, cardTextoArmas));
@@ -85,13 +85,13 @@ if (larguraPagina > 999) {
 
     /*faz a animação do card lacaios usando touch  */
     cardLacaios.addEventListener('touchstart', () => ativaCard(cardLacaios, cardTextoLacaios));
-    cardLacaios.addEventListener('touchend', () => setTimeout(() => desativaCard(cardLacaios, cardTextoLacaios), 8000));
-    cardTextoLacaios.addEventListener('touchend', () => setTimeout(() => desativaCard(cardLacaios, cardTextoLacaios), 8000));
+    cardLacaios.addEventListener('touchend', () => setTimeout(() => desativaCard(cardLacaios, cardTextoLacaios), 4000));
+    cardTextoLacaios.addEventListener('touchend', () => setTimeout(() => desativaCard(cardLacaios, cardTextoLacaios), 4000));
 
     /*faz a animação do card diversos usando touch  */
     cardDiversos.addEventListener('touchstart', () => ativaCard(cardDiversos, cardTextoDiversos));
-    cardDiversos.addEventListener('touchend', () => setTimeout(() => desativaCard(cardDiversos, cardTextoDiversos), 8000));
-    cardTextoDiversos.addEventListener('touchend', () => setTimeout(() => desativaCard(cardDiversos, cardTextoDiversos), 8000));
+    cardDiversos.addEventListener('touchend', () => setTimeout(() => desativaCard(cardDiversos, cardTextoDiversos), 4000));
+    cardTextoDiversos.addEventListener('touchend', () => setTimeout(() => desativaCard(cardDiversos, cardTextoDiversos), 4000));
 }
 
 
