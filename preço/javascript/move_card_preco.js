@@ -85,13 +85,13 @@ if (larguraPagina > 999) {
 
     /*faz a animação do card lacaios usando touch  */
     cardLacaios.addEventListener('touchstart', () => ativaCard(cardLacaios, cardTextoLacaios));
-    cardLacaios.addEventListener('touchend', () => setTimeout(() => desativaCard(cardLacaios, cardTextoLacaios), 3000));
-    cardTextoLacaios.addEventListener('touchend', () => setTimeout(() => desativaCard(cardLacaios, cardTextoLacaios), 3000));
+    cardLacaios.addEventListener('touchend', () => setTimeout(() => desativaCard(cardLacaios, cardTextoLacaios), 8000));
+    cardTextoLacaios.addEventListener('touchend', () => setTimeout(() => desativaCard(cardLacaios, cardTextoLacaios), 8000));
 
     /*faz a animação do card diversos usando touch  */
     cardDiversos.addEventListener('touchstart', () => ativaCard(cardDiversos, cardTextoDiversos));
-    cardDiversos.addEventListener('touchend', () => setTimeout(() => desativaCard(cardDiversos, cardTextoDiversos), 3000));
-    cardTextoDiversos.addEventListener('touchend', () => setTimeout(() => desativaCard(cardDiversos, cardTextoDiversos), 3000));
+    cardDiversos.addEventListener('touchend', () => setTimeout(() => desativaCard(cardDiversos, cardTextoDiversos), 8000));
+    cardTextoDiversos.addEventListener('touchend', () => setTimeout(() => desativaCard(cardDiversos, cardTextoDiversos), 8000));
 }
 
 
