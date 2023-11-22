@@ -1,4 +1,4 @@
-@media (max-width: 999px) {
+@media (max-width: 1000px) {
 
     body {
         background-position-x: -400px;
@@ -78,4 +78,33 @@
     #slider h1 {
         left: 25vh;
     }
+
+
+    #texto-pets{
+        top: 745px;
+        height: 219px;
+    }
+    
+    #texto-armas{
+        top: 985px;
+        height: 129px;
+    }
+
+    #texto-armaduras{
+        top: 1135px;
+    }
+
+    #texto-ferramentas{
+        top: 1285px; 
+        height: 129px; 
+    }
+
+    #texto-lacaios{
+        top: 1435px;
+    }
+
+    #texto-diversos{
+        top: 1935px;
+    }
+
 }

@@ -50,6 +50,217 @@
         width: 325px;
     }
 
+
+
+    #card-pets{
+        width: 150px;
+        height: 270px;
+    }
+   
+    #card-pets img{
+        width: 100px;
+    }
+
+    #card-pets.ativado{
+        transform: translateX(-75px);
+    }
+     
+    #texto-pets{
+        width: 130px;
+        height: 268px;
+        top: 545px;
+    }
+    
+    #texto-pets p{
+        margin-bottom: 5px;
+    }
+
+    #texto-pets.ativado{
+        transform: translateX(65px);
+    }
+
+
+
+
+
+
+
+
+
+
+
+    #card-armas{
+        width: 150px;
+    }
+    
+    #card-armas.ativado{
+        transform: translateX(-75px);
+    }
+    
+    #texto-armas{
+        width:150px;
+        height: 128px;
+        top: 836px;
+    }
+    
+    #texto-armas.ativado{
+        transform: translateX(75px);
+    }
+    
+    
+
+
+
+
+
+
+    #card-armaduras{
+        width: 165px; 
+    }
+    
+    #card-armaduras h2{
+        font-size: 1.1em;
+    }
+    
+    #card-armaduras.ativado{
+        transform: translateX(-70px);
+    }
+    
+    #texto-armaduras{
+        width: 165px;
+        height: 128px;
+        top: 985px;
+       
+    }
+    
+    #texto-armaduras.ativado{
+        transform: translateX(70px);
+    }
+    
+    #texto-armaduras p{
+        margin-bottom: 5px;
+        margin-left: 40px;
+    }
+    
+   
+
+
+
+
+
+
+
+
+    #card-ferramentas{
+        width: 165px;
+        height: 130px;
+    }
+    
+    #card-ferramentas h2{
+        font-size: .9em;
+    }
+    
+    #card-ferramentas img{
+        width: 80px;
+        margin-top: 5px;
+    }
+    
+    #card-ferramentas.ativado{
+        transform: translateX(-70px);
+    }
+    
+    #texto-ferramentas{
+        width: 165px;
+        height: 129px;
+        top: 1135px; 
+    }
+    
+    #texto-ferramentas.ativado{
+        transform: translateX(70px);
+    }
+    
+    #texto-ferramentas p{
+        font-size: 0.8em;
+        margin-bottom: 5px;
+        margin-left: 33px;
+    }
+
+
+
+
+
+
+
+    #card-lacaios{
+        width: 150px;
+        height: 410px;
+    }
+    
+    #card-lacaios.ativado{
+        transform: translateX(-75px);
+    }
+    
+    #card-lacaios img{
+        width: 100px;
+        margin-top: 50px;
+    }
+    
+    #texto-lacaios{
+        width: 150px;
+        height: 408px;
+        top: 1285px;
+    }
+    
+    #texto-lacaios.ativado{
+        transform: translateX(75px);
+    }
+    
+    #texto-lacaios p{
+        font-size: 0.6em;
+        margin-bottom: 12px;
+        margin-left: 10px;
+    }
+
+
+
+
+
+
+
+    #card-diversos{
+        width: 150px;
+        height: 410px;
+    }
+    
+    #card-diversos.ativado{
+        transform: translateX(-75px);
+    }
+    
+    #card-diversos h2{
+       font-size: 1.1em;
+    }
+    
+    #card-diversos img{
+        width: 90px;
+        margin-top: 50px;
+    }
+    
+    #texto-diversos{
+        width: 150px;
+        height: 408px;
+        top: 1715px;
+    }
+    
+    #texto-diversos.ativado{
+        transform: translateX(75px);
+    }
+    
+    #texto-diversos p{
+        font-size: 0.6em;
+        margin-bottom: 12px;
+        margin-left: 10px;
+    }
+
     
     .footer{
         width: 356px;

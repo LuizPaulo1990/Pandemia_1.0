@@ -28,7 +28,7 @@ function desativaCard(cardPrincipal, cardSecundario) {
     cardPrincipal.classList.remove('ativado');
 }
 
-if (larguraPagina > 999) {
+if (larguraPagina > 1000) {
 
     /*faz a animação do card pets usando mouse  */
     cardPets.addEventListener('mousedown', () => ativaCard(cardPets, cardTextoPets));

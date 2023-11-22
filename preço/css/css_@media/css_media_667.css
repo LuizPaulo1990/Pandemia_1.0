@@ -12,5 +12,29 @@
         width: 667px;
     }
 
+    #texto-pets{
+        top: 694px;
+    }
+    
+    #texto-armas{
+        top: 934px;
+    }
+
+    #texto-armaduras{
+        top: 1085px;
+    }
+
+    #texto-ferramentas{
+        top: 1234px;  
+    }
+
+    #texto-lacaios{
+        top: 1385px;
+    }
+
+    #texto-diversos{
+        top: 1885px;
+    }
+
     
 }
