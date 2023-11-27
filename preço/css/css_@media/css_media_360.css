@@ -228,6 +228,10 @@
         width: 100px;
         margin-top: 50px;
     }
+
+    #card-lacaios img.ativado{
+        width: 130px;
+    }
     
     #texto-lacaios{
         width: 150px;
@@ -267,6 +271,10 @@
     #card-diversos img{
         width: 90px;
         margin-top: 50px;
+    }
+
+    #card-diversos img.ativado{
+        width: 130px;
     }
     
     #texto-diversos{
