@@ -1,0 +1,69 @@
+@media (max-width: 1029px) {
+
+    nav {
+        width: 1024px;
+    }
+
+    .logo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .nav-list li {
+        letter-spacing: 3px;
+        margin-right: 5px;
+    }
+
+    .nav-list li a {
+        font-size: 1em;
+    }
+
+    #slider{
+        width: 1024px;
+        height: 400px;
+        margin-top: 0px;
+        border-radius: 0px;
+        margin-bottom: 30px;
+        transition: 3s;
+    }
+    
+    #slider div{
+        width: 1024px;
+        height: 400px;
+        transition: 3s;
+    }
+    
+
+    #slider img{
+        border-radius: 0px;
+    }
+
+    #texto-pets{
+        top: 745px;
+        height: 219px;
+    }
+    
+    #texto-armas{
+        top: 985px;
+        height: 129px;
+    }
+
+    #texto-armaduras{
+        top: 1135px;
+    }
+
+    #texto-ferramentas{
+        top: 1285px; 
+        height: 129px; 
+    }
+
+    #texto-lacaios{
+        top: 1435px;
+    }
+
+    #texto-diversos{
+        top: 1935px;
+    }
+    
+
+}

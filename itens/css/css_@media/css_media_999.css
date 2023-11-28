@@ -1,0 +1,108 @@
+@media (max-width: 1000px) {
+
+    body {
+        background-position-x: -400px;
+    }
+
+    .nav-list {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        top: 79px;
+        right: 0;
+        width: 250px;
+        height: 400px;
+        border-radius: 0px 0px 20px 20px;
+        background: #171219;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li{
+        position: relative;
+        left: -250px;
+        margin-left: 20px;
+    }
+
+    .nav-list li a {
+        position: relative;
+        right: -250px;
+    }
+
+    .mobile-menu {
+        display: block;
+        border-radius: 20px;
+    }
+
+    .nav-list.ativada {
+        display: flex;
+    }
+
+    @keyframes animacaoLinks {
+        from {
+            opacity: 0;
+            transform: translateX(150px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+    }
+
+    .mobile-menu.ativada .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+
+    .mobile-menu.ativada .line2 {
+        opacity: 0;
+    }
+
+    .mobile-menu.ativada .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+    #slider {
+        width: 90vh;
+    }
+    
+    #slider div {
+        width:90vh;
+    }
+    
+    #slider h1 {
+        left: 25vh;
+    }
+
+
+    #texto-pets{
+        top: 745px;
+        height: 219px;
+    }
+    
+    #texto-armas{
+        top: 985px;
+        height: 129px;
+    }
+
+    #texto-armaduras{
+        top: 1135px;
+    }
+
+    #texto-ferramentas{
+        top: 1285px; 
+        height: 129px; 
+    }
+
+    #texto-lacaios{
+        top: 1435px;
+    }
+
+    #texto-diversos{
+        top: 1935px;
+    }
+
+}
