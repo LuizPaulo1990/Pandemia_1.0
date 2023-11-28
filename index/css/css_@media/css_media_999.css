@@ -25,6 +25,7 @@
         position: relative;
         left: -250px;
         margin-left: 20px;
+        opacity: 0;
     }
 
     .nav-list li a {
