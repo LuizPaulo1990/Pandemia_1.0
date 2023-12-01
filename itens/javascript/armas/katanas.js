@@ -105,9 +105,85 @@ const katanas = [
 ]
 
 
+function geraCard(array, containerCard) {
+
+    array.forEach((itens) => {
+        const card = document.createElement('div');
+        card.classList.add('card');
+        containerCard.appendChild(card);
+
+        const titulo = document.createElement('h3');
+        titulo.classList.add('titulo-card');
+        titulo.innerHTML = itens.nome;
+        card.appendChild(titulo);
+
+        const imagem = document.createElement('img');
+        imagem.src = itens.imagem;
+        imagem.classList.add('imagem-card');
+        card.appendChild(imagem);
+
+        const atributo = document.createElement('p');
+        atributo.innerHTML = 'atributo: ';
+        const atributoSpan = document.createElement('span');
+        atributoSpan.innerHTML = itens.atributo;
+        atributo.appendChild(atributoSpan);
+        card.appendChild(atributo);
+
+        const danoMinimo = document.createElement('p');
+        danoMinimo.innerHTML = 'dano mínimo: ';
+        const danoMinimoSpan = document.createElement('span');
+        danoMinimoSpan.innerHTML = itens.dano_minimo;
+        danoMinimo.appendChild(danoMinimoSpan);
+        card.appendChild(danoMinimo);
+
+        const danoMaximo = document.createElement('p');
+        danoMaximo.innerHTML = 'dano máximo: ';
+        const danoMaximoSpan = document.createElement('span');
+        danoMaximoSpan.innerHTML = itens.dano_maximo;
+        danoMaximo.appendChild(danoMaximoSpan);
+        card.appendChild(danoMaximo);
+
+        const penetracao = document.createElement('p');
+        penetracao.innerHTML = 'penetração: ';
+        const penetracaoSpan = document.createElement('span');
+        penetracaoSpan.innerHTML = itens.penetração + '%';
+        penetracao.appendChild(penetracaoSpan);
+        card.appendChild(penetracao);
+
+
+        const efeito = document.createElement('p');
+        efeito.innerHTML = 'efeito: ';
+        const efeitoSpan = document.createElement('span');
+        efeitoSpan.innerHTML = itens.efeito;
+        efeito.appendChild(efeitoSpan);
+        card.appendChild(efeito);
 
 
 
+        const durabilidade = document.createElement('p');
+        durabilidade.innerHTML = 'durabilidade: ';
+        const durabilidadeSpan = document.createElement('span');
+        durabilidadeSpan.innerHTML = itens.durabilidade;
+        durabilidade.appendChild(durabilidadeSpan);
+        card.appendChild(durabilidade);
+
+        const peso = document.createElement('p');
+        peso.innerHTML = 'peso: ';
+        const pesoSpan = document.createElement('span');
+        pesoSpan.innerHTML = itens.peso;
+        peso.appendChild(pesoSpan);
+        card.appendChild(peso);
+
+        const btnAddCarrinho = document.createElement('button');
+        btnAddCarrinho.classList.add('btn-add');
+        const btnImagem = document.createElement('img');
+        btnImagem.src = "img/itens_img/bau.png";
+        btnAddCarrinho.appendChild(btnImagem);
+        card.appendChild(btnAddCarrinho);
+
+
+    })
+}
 
 
 const conteudoPrincipal = document.getElementById('conteudo-principal');
@@ -117,7 +193,7 @@ const containerConteudo = document.getElementById('container-conteudo');
 
 
 
-function geraCardKatanas() {
+function geraContainerKatanas() {
     conteudoPrincipal.style.opacity = 0;
     containerConteudo.style.display = 'flex';
     const btnFecha = document.createElement('button');
@@ -129,88 +205,17 @@ function geraCardKatanas() {
     containerConteudo.appendChild(containerCard);
 
 
-    katanas.forEach((katana) => {
-        const card = document.createElement('div');
-        card.classList.add('card');
-        containerCard.appendChild(card);
-    
-        const titulo = document.createElement('h3');
-        titulo.classList.add('titulo-card');
-        titulo.innerHTML = katana.nome;
-        card.appendChild(titulo);
-    
-        const imagem = document.createElement('img');
-        imagem.src = katana.imagem;
-        imagem.classList.add('imagem-card');
-        card.appendChild(imagem);
-    
-        const atributo = document.createElement('p');
-        atributo.innerHTML = 'atributo: ';
-        const atributoSpan = document.createElement('span');
-        atributoSpan.innerHTML = katana.atributo;
-        atributo.appendChild(atributoSpan);
-        card.appendChild(atributo);
-    
-        const danoMinimo = document.createElement('p');
-        danoMinimo.innerHTML = 'dano mínimo: ';
-        const danoMinimoSpan = document.createElement('span');
-        danoMinimoSpan.innerHTML = katana.dano_minimo;
-        danoMinimo.appendChild(danoMinimoSpan);
-        card.appendChild(danoMinimo);
-    
-        const danoMaximo = document.createElement('p');
-        danoMaximo.innerHTML = 'dano máximo: ';
-        const danoMaximoSpan = document.createElement('span');
-        danoMaximoSpan.innerHTML = katana.dano_maximo;
-        danoMaximo.appendChild(danoMaximoSpan);
-        card.appendChild(danoMaximo);
-    
-        const penetracao = document.createElement('p');
-        penetracao.innerHTML = 'penetração: ';
-        const penetracaoSpan = document.createElement('span');
-        penetracaoSpan.innerHTML = katana.penetração + '%';
-        penetracao.appendChild(penetracaoSpan);
-        card.appendChild(penetracao);
-    
-    
-        const efeito = document.createElement('p');
-        efeito.innerHTML = 'efeito: ';
-        const efeitoSpan = document.createElement('span');
-        efeitoSpan.innerHTML = katana.efeito;
-        efeito.appendChild(efeitoSpan);
-        card.appendChild(efeito);
-    
-    
-    
-        const durabilidade = document.createElement('p');
-        durabilidade.innerHTML = 'durabilidade: ';
-        const durabilidadeSpan = document.createElement('span');
-        durabilidadeSpan.innerHTML = katana.durabilidade;
-        durabilidade.appendChild(durabilidadeSpan);
-        card.appendChild(durabilidade);
-    
-        const peso = document.createElement('p');
-        peso.innerHTML = 'peso: ';
-        const pesoSpan = document.createElement('span');
-        pesoSpan.innerHTML = katana.peso;
-        peso.appendChild(pesoSpan);
-        card.appendChild(peso);
-    
-        const btnAddCarrinho = document.createElement('button');
-        btnAddCarrinho.classList.add('btn-add');
-        const btnImagem = document.createElement('img');
-        btnImagem.src = "img/itens_img/bau.png";
-        btnAddCarrinho.appendChild(btnImagem);
-        card.appendChild(btnAddCarrinho);
-    
-    
-    })
+
+    geraCard(katanas, containerCard);
 
 
-
+    setInterval(() => {
+        containerConteudo.style.opacity = 1;
+    }, 1000)
 
     btnFecha.addEventListener("click", () => {
         containerConteudo.style.display = 'none';
+        containerCard.innerHTML = '';
         containerConteudo.innerHTML = '';
         conteudoPrincipal.style.opacity = 1;
     })
@@ -221,5 +226,5 @@ function geraCardKatanas() {
 
 
 
-btnKatanas.addEventListener('click', geraCardKatanas);
+btnKatanas.addEventListener('click', geraContainerKatanas);
 
