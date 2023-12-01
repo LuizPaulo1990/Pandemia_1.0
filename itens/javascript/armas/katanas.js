@@ -1,7 +1,7 @@
 const katanas = [
     {
         id: 1,
-        nome: "Blade of the seven winds",
+        nome: "seven winds",
         atributo: "agilidade",
         penetração: 100,
         dano_minimo: 33,
@@ -9,7 +9,7 @@ const katanas = [
         durabilidade: 2700,
         peso: 4.38,
         efeito: "sangramento",
-        imagem: "https://static.wikia.nocookie.net/conanexiles_gamepedia/images/7/7b/Icon_Japan_2hSword_Katana_variant_1.png/revision/latest?cb=20181211224156"
+        imagem: "img/itens_img/katanas-card-img/sete-ventos.webp"
     },
 
     {
@@ -22,7 +22,7 @@ const katanas = [
         durabilidade: 2700,
         peso: 4.38,
         efeito: "sangramento",
-        imagem: "https://static.wikia.nocookie.net/conanexiles_gamepedia/images/4/47/Icon_elder_katana.png/revision/latest?cb=20230625211352"
+        imagem: "img/itens_img/katanas-card-img/katana-3-iguais.webp"
     },
 
     {
@@ -35,7 +35,7 @@ const katanas = [
         durabilidade: 2700,
         peso: 1.00,
         efeito: "sangramento",
-        imagem: "https://static.wikia.nocookie.net/conanexiles_gamepedia/images/4/47/Icon_elder_katana.png/revision/latest?cb=20230625211352"
+        imagem: "img/itens_img/katanas-card-img/katana-3-iguais.webp"
     },
 
     {
@@ -47,26 +47,26 @@ const katanas = [
         dano_maximo: 75,
         durabilidade: 2700,
         peso: 8.75,
-        efeito: "sangramento e arrancar",
-        imagem: "https://static.wikia.nocookie.net/conanexiles_gamepedia/images/4/47/Icon_elder_katana.png/revision/latest?cb=20230625211352"
+        efeito: "sangramento/arrancar",
+        imagem: "img/itens_img/katanas-card-img/katana-3-iguais.webp"
     },
 
     {
         id: 5,
-        nome: "Musashi's black blade",
+        nome: "Musashi's blade",
         atributo: "agilidade",
         penetração: 13.5,
         dano_minimo: 74,
         dano_maximo: 89,
         durabilidade: 2700,
         peso: 4.38,
-        efeito: "sangramento e lentidão",
-        imagem: "https://static.wikia.nocookie.net/conanexiles_gamepedia/images/9/97/Icon_Japan_2hSword_Katana_variant_3.png/revision/latest?cb=20230626152521"
+        efeito: "sangramento/lentidão",
+        imagem: "img/itens_img/katanas-card-img/musashi.webp"
     },
 
     {
         id: 6,
-        nome: "Prince kraxu's curved blade",
+        nome: " kraxu's blade",
         atributo: "agilidade",
         penetração: 14.85,
         dano_minimo: 66,
@@ -74,7 +74,7 @@ const katanas = [
         durabilidade: 2700,
         peso: 8.75,
         efeito: "sangramento",
-        imagem: "https://static.wikia.nocookie.net/conanexiles_gamepedia/images/e/ea/Icon_2h_legendary_katana_01.png/revision/latest?cb=20201003185650"
+        imagem: "img/itens_img/katanas-card-img/katana-principe.webp"
     },
 
     {
@@ -87,12 +87,12 @@ const katanas = [
         durabilidade: 1350,
         peso: 3.06,
         efeito: "sangramento",
-        imagem: "https://static.wikia.nocookie.net/conanexiles_gamepedia/images/a/ac/Icon_2h_legendary_katana_03.png/revision/latest?cb=20201003185056"
+        imagem: "img/itens_img/katanas-card-img/katana-coracao-gelado.webp"
     },
 
     {
         id: 8,
-        nome: "Song of the minstrel",
+        nome: "Song minstrel",
         atributo: "agilidade",
         penetração: 13.5,
         dano_minimo: 50,
@@ -100,24 +100,123 @@ const katanas = [
         durabilidade: 1350,
         peso: 3.06,
         efeito: "sangramento",
-        imagem: "https://static.wikia.nocookie.net/conanexiles_gamepedia/images/d/de/Icon_2h_legendary_katana_04.png/revision/latest?cb=20201003185931"
+        imagem: "img/itens_img/katanas-card-img/katana-minestrel.webp"
     },
 ]
 
+const conteudoPrincipal = document.getElementById('conteudo-principal');
+const btnKatanas = document.getElementById('katana-btn');
+const conteudoCard = document.getElementById('container-card');
+const containerConteudo = document.getElementById('container-conteudo');
 
-function mostraKatanas(){
-    katanas.forEach(katana => {
+
+
+function geraCardKatanas() {
+    conteudoPrincipal.style.opacity = 0;
+    containerConteudo.style.display = 'flex';
+    const btnFecha = document.createElement('button');
+    btnFecha.innerHTML = 'X';
+    btnFecha.classList.add('btn-fecha-katanas');
+    containerConteudo.appendChild(btnFecha);
+    const containerCard = document.createElement('div');
+    containerCard.classList.add('container-card');
+    containerConteudo.appendChild(containerCard);
+
+
+    katanas.forEach((katana) => {
         const card = document.createElement('div');
         card.classList.add('card');
-        const subCard = document.createElement('div');
-        subCard.classList.add('sub-card');
-        const imagemCard = document.createElement('img');
-        imagemCard.src = URL(`${katana.imagem}`);
-        const nomeKatanaCard = document.createElement('h2');
-        nomeKatanaCard.innerHTML = katana.nome
-        subCard.appendChild(imagemCard)
-        subCard.appendChild(nomeKatanaCard)
-        card.appendChild(subCard);
-    });
+        containerCard.appendChild(card);
+    
+        const titulo = document.createElement('h3');
+        titulo.classList.add('titulo-card');
+        titulo.innerHTML = katana.nome;
+        card.appendChild(titulo);
+    
+        const imagem = document.createElement('img');
+        imagem.src = katana.imagem;
+        imagem.classList.add('imagem-card');
+        card.appendChild(imagem);
+    
+        const atributo = document.createElement('p');
+        atributo.innerHTML = 'atributo: ';
+        const atributoSpan = document.createElement('span');
+        atributoSpan.innerHTML = katana.atributo;
+        atributo.appendChild(atributoSpan);
+        card.appendChild(atributo);
+    
+        const danoMinimo = document.createElement('p');
+        danoMinimo.innerHTML = 'dano mínimo: ';
+        const danoMinimoSpan = document.createElement('span');
+        danoMinimoSpan.innerHTML = katana.dano_minimo;
+        danoMinimo.appendChild(danoMinimoSpan);
+        card.appendChild(danoMinimo);
+    
+        const danoMaximo = document.createElement('p');
+        danoMaximo.innerHTML = 'dano máximo: ';
+        const danoMaximoSpan = document.createElement('span');
+        danoMaximoSpan.innerHTML = katana.dano_maximo;
+        danoMaximo.appendChild(danoMaximoSpan);
+        card.appendChild(danoMaximo);
+    
+        const penetracao = document.createElement('p');
+        penetracao.innerHTML = 'penetração: ';
+        const penetracaoSpan = document.createElement('span');
+        penetracaoSpan.innerHTML = katana.penetração + '%';
+        penetracao.appendChild(penetracaoSpan);
+        card.appendChild(penetracao);
+    
+    
+        const efeito = document.createElement('p');
+        efeito.innerHTML = 'efeito: ';
+        const efeitoSpan = document.createElement('span');
+        efeitoSpan.innerHTML = katana.efeito;
+        efeito.appendChild(efeitoSpan);
+        card.appendChild(efeito);
+    
+    
+    
+        const durabilidade = document.createElement('p');
+        durabilidade.innerHTML = 'durabilidade: ';
+        const durabilidadeSpan = document.createElement('span');
+        durabilidadeSpan.innerHTML = katana.durabilidade;
+        durabilidade.appendChild(durabilidadeSpan);
+        card.appendChild(durabilidade);
+    
+        const peso = document.createElement('p');
+        peso.innerHTML = 'peso: ';
+        const pesoSpan = document.createElement('span');
+        pesoSpan.innerHTML = katana.peso;
+        peso.appendChild(pesoSpan);
+        card.appendChild(peso);
+    
+        const btnAddCarrinho = document.createElement('button');
+        btnAddCarrinho.classList.add('btn-add');
+        const btnImagem = document.createElement('img');
+        btnImagem.src = "img/itens_img/bau.png";
+        btnAddCarrinho.appendChild(btnImagem);
+        card.appendChild(btnAddCarrinho);
+    
+    
+    })
+
+
+
+
+
+
+
+    btnFecha.addEventListener("click", () => {
+        containerConteudo.style.display = 'none';
+        containerConteudo.innerHTML = '';
+        conteudoPrincipal.style.opacity = 1;
+    })
+
 }
+
+
+
+
+
+btnKatanas.addEventListener('click', geraCardKatanas);
 
