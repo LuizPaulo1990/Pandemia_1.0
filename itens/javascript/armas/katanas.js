@@ -104,6 +104,12 @@ const katanas = [
     },
 ]
 
+
+
+
+
+
+
 const conteudoPrincipal = document.getElementById('conteudo-principal');
 const btnKatanas = document.getElementById('katana-btn');
 const conteudoCard = document.getElementById('container-card');
@@ -199,9 +205,6 @@ function geraCardKatanas() {
     
     
     })
-
-
-
 
 
 
