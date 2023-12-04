@@ -1,3 +1,12 @@
+const conteudoPrincipal = document.getElementById('conteudo-principal');
+const btnKatanas = document.getElementById('katana-btn');
+const btnAdagas = document.getElementById('adaga-btn');
+const conteudoCard = document.getElementById('container-card');
+const containerConteudo = document.getElementById('container-conteudo');
+
+
+
+
 const katanas = [
     {
         id: 1,
@@ -47,7 +56,7 @@ const katanas = [
         dano_maximo: 75,
         durabilidade: 2700,
         peso: 8.75,
-        efeito: "sangramento/arrancar",
+        efeito: "s/executar",
         imagem: "img/itens_img/katanas-card-img/katana-3-iguais.webp"
     },
 
@@ -60,7 +69,7 @@ const katanas = [
         dano_maximo: 89,
         durabilidade: 2700,
         peso: 4.38,
-        efeito: "sangramento/lentidão",
+        efeito: "s/lentidão",
         imagem: "img/itens_img/katanas-card-img/musashi.webp"
     },
 
@@ -104,13 +113,28 @@ const katanas = [
     },
 ]
 
+const adagas = [
 
-function geraCard(array, containerCard) {
+    {
+        id: 1,
+        nome: "Akbitanan Blades",
+        atributo: "agilidade",
+        penetração: 18,
+        dano_minimo: 44,
+        dano_maximo: 49,
+        durabilidade: 3600,
+        peso: 2.45,
+        efeito: "s/lentidão",
+        imagem: "img/itens_img/adagas-card-img/Akbitanan-Blades.webp"
+    },
+]
+
+function geraCard(array, container) {
 
     array.forEach((itens) => {
         const card = document.createElement('div');
         card.classList.add('card');
-        containerCard.appendChild(card);
+        container.appendChild(card);
 
         const titulo = document.createElement('h3');
         titulo.classList.add('titulo-card');
@@ -186,19 +210,14 @@ function geraCard(array, containerCard) {
 }
 
 
-const conteudoPrincipal = document.getElementById('conteudo-principal');
-const btnKatanas = document.getElementById('katana-btn');
-const conteudoCard = document.getElementById('container-card');
-const containerConteudo = document.getElementById('container-conteudo');
 
 
-
-function geraContainerKatanas() {
+function geraContainerArmas(armas) {
     conteudoPrincipal.style.opacity = 0;
     containerConteudo.style.display = 'flex';
     const btnFecha = document.createElement('button');
     btnFecha.innerHTML = 'X';
-    btnFecha.classList.add('btn-fecha-katanas');
+    btnFecha.classList.add('btn-fecha');
     containerConteudo.appendChild(btnFecha);
     const containerCard = document.createElement('div');
     containerCard.classList.add('container-card');
@@ -206,7 +225,7 @@ function geraContainerKatanas() {
 
 
 
-    geraCard(katanas, containerCard);
+    geraCard(armas, containerCard);
 
 
     setInterval(() => {
@@ -226,5 +245,6 @@ function geraContainerKatanas() {
 
 
 
-btnKatanas.addEventListener('click', geraContainerKatanas);
+btnKatanas.addEventListener('click', () => geraContainerArmas(katanas));
+btnAdagas.addEventListener('click', () => geraContainerArmas(adagas));
 

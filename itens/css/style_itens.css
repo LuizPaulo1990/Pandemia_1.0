@@ -173,13 +173,14 @@ main {
     position: absolute;
     top: 660px;
     left: 558px;
-    width: 700px;
+    width: 630px;
     display: none;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(/img/pergaminho3.jfif) center center no-repeat;
-    background-size: cover;
-    border-radius: 20px;
+    background-color: #171219;
+    border-radius: 20px 20px 5px 20px;
+    border: none;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
     opacity: 0;
     transition: 2s ease-in-out;
@@ -191,12 +192,11 @@ main {
     width: 630px;
     height: 520px;
     align-items: center;
-    background: url(/img/pergaminho3.jfif) center center no-repeat;
-    background-size: cover;
-    border-radius: 20px 0 0 20px;
+    background:transparent;
+    border-radius: 0 5px 5px 20px;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
     overflow-y: scroll;
-    margin: 40px 0 20px -25px;
+    margin-top: 15px;
     transition: 2s ease-in-out;
 }
 
@@ -211,34 +211,36 @@ main {
     height: 200px;
     border-radius: 5px;
     height: 80px;
+    border-radius: 8px 20px 20px 8px;
 
 }
 
 .container-card::-webkit-scrollbar-thumb{
     background-color: darkred;
     height: 30px;
+    border-radius: 8px 20px 20px 8px;
     
 
 }
 
-.btn-fecha-katanas{
-    position: relative;
-    top: -270px;
-    left: 630px;
-    width: 25px;
-    height: 25px;
+.btn-fecha{
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+    margin-left: 550px;
     background-color: black;
     font-family: 'Nosifer', sans-serif;
     color: darkred;
     border-radius: 5px;
-    box-shadow: 2px 2px 0 rgb(54, 52, 52);
+    box-shadow: 2px 3px 0 rgb(54, 52, 52);
     border: none;
 
 }
 
-.btn-fecha-katanas:active{
-    top: -268px;
-    left: 632px;
+.btn-fecha:active{
+    position: relative;
+    top: 3px;
+    left: 2px;
     box-shadow: none; 
 }
 
@@ -246,7 +248,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../../img/itens_img/plano-fundo-katana-card.svg);
+    background-image: url(../../img/itens_img/plano-fundo-cards.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
