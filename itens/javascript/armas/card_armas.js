@@ -9,6 +9,7 @@ const btnMachadoDuasMaos = document.getElementById('machado-grande-btn');
 const btnMacaUmaMao = document.getElementById('maca-btn');
 const btnMacaDuasMaos = document.getElementById('maca-grande-btn');
 const btnLanca = document.getElementById('lanca-btn');
+const brnArcos = document.getElementById('arco-btn');
 const conteudoCard = document.getElementById('container-card');
 const containerConteudo = document.getElementById('container-conteudo');
 
@@ -1495,6 +1496,117 @@ const lancasDuasMaos = [
     },
 ]
 
+const arcos = [
+    {
+        id: 1,
+        nome: "Abyssal Bow",
+        atributo: "agilidade",
+        penetração: 9.45,
+        dano_minimo: 33,
+        dano_maximo: 33,
+        durabilidade: 100,
+        peso: 0.10,
+        efeito: "nenhuma",
+        imagem: "img/itens_img/arcos-img/Icon_demon_bow.webp"
+    },
+    {
+        id: 2,
+        nome: "Bessie's Bow",
+        atributo: "força",
+        penetração: 9.45,
+        dano_minimo: 26,
+        dano_maximo: 26,
+        durabilidade: 3000,
+        peso: 3.50,
+        efeito: "rouba stamina",
+        imagem: "img/itens_img/arcos-img/Icon_legendary_bow_02.webp"
+    },
+    {
+        id: 3,
+        nome: "Bite Huntress",
+        atributo: "agilidade",
+        penetração: 9,
+        dano_minimo: 20,
+        dano_maximo: 20,
+        durabilidade: 1500,
+        peso: 2.45,
+        efeito: "nenhuma",
+        imagem: "img/itens_img/arcos-img/Icon_legendary_bow_03.webp"
+    },
+    {
+        id: 4,
+        nome: "BloodMoon Bow",
+        atributo: "agilidade",
+        penetração: 0,
+        dano_minimo: 33,
+        dano_maximo: 33,
+        durabilidade: 3000,
+        peso: 3.50,
+        efeito: "nenhuma",
+        imagem: "img/itens_img/arcos-img/Icon_bloodmoon_bow.webp"
+    },
+    {
+        id: 5,
+        nome: "Derketo's Voice",
+        atributo: "força",
+        penetração: 0,
+        dano_minimo: 33,
+        dano_maximo: 33,
+        durabilidade: 4400,
+        peso: 4.20,
+        efeito: "rouba stamina",
+        imagem: "img/itens_img/arcos-img/Icon_legendary_bow_03.webp"
+    },
+    {
+        id: 6,
+        nome: "Eye Khan",
+        atributo: "força",
+        penetração: 9.45,
+        dano_minimo: 26,
+        dano_maximo: 26,
+        durabilidade: 3000,
+        peso: 3.50,
+        efeito: "rouba stamina",
+        imagem: "img/itens_img/arcos-img/Icon_legendary_bow_01.webp"
+    },
+    {
+        id: 7,
+        nome: "Fling Shot",
+        atributo: "agilidade",
+        penetração: 9.45,
+        dano_minimo: 1,
+        dano_maximo: 1,
+        durabilidade: 20,
+        peso: 3.50,
+        efeito: "nenhum",
+        imagem: "img/itens_img/arcos-img/Icon_khari_bow.webp"
+    },
+    {
+        id: 8,
+        nome: "Frostshot",
+        atributo: "agilidade",
+        penetração: 9.9,
+        dano_minimo: 26,
+        dano_maximo: 26,
+        durabilidade: 3000,
+        peso: 7.00,
+        efeito: "nenhum",
+        imagem: "img/itens_img/arcos-img/Icon_legendary_bow_03.webp"
+    },
+    {
+        id: 9,
+        nome: "Frostshot",
+        atributo: "agilidade",
+        penetração: 9.9,
+        dano_minimo: 26,
+        dano_maximo: 26,
+        durabilidade: 3000,
+        peso: 7.00,
+        efeito: "nenhum",
+        imagem: "img/itens_img/arcos-img/Icon_legendary_bow_03.webp"
+    },
+]
+
 
 
 function geraCard(array, container) {
@@ -1632,4 +1744,6 @@ btnMacaUmaMao.addEventListener('click', () => geraContainerArmas(macaUmaMao));
 btnMacaDuasMaos.addEventListener('click', () => geraContainerArmas(macaDuasMaos));
 
 btnLanca.addEventListener('click', () => geraContainerArmas(lancasDuasMaos));
+
+brnArcos.addEventListener('click', () => geraContainerArmas(arcos));
 
