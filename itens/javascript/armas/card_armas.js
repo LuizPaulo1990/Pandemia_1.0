@@ -9,7 +9,11 @@ const btnMachadoDuasMaos = document.getElementById('machado-grande-btn');
 const btnMacaUmaMao = document.getElementById('maca-btn');
 const btnMacaDuasMaos = document.getElementById('maca-grande-btn');
 const btnLanca = document.getElementById('lanca-btn');
-const brnArcos = document.getElementById('arco-btn');
+const btnArcos = document.getElementById('arco-btn');
+const btnDiversos = document.getElementById('diversos-btn');
+const btnArmaduraPesada= document.getElementById('armadura-pesada-btn');
+const btnArmaduraMedia = document.getElementById('armadura-media-btn');
+const btnArmaduraLeve = document.getElementById('armadura-leve-btn');
 const conteudoCard = document.getElementById('container-card');
 const containerConteudo = document.getElementById('container-conteudo');
 
@@ -65,7 +69,7 @@ const katanas = [
         dano_maximo: 75,
         durabilidade: 2700,
         peso: 8.75,
-        efeito: "s/executar",
+        efeito: "sangramento / executar",
         imagem: "img/itens_img/katanas-card-img/katana-3-iguais.webp"
     },
 
@@ -133,7 +137,7 @@ const adagas = [
         dano_maximo: 49,
         durabilidade: 3600,
         peso: 2.45,
-        efeito: "s/lentidão",
+        efeito: "sangramento / lentidão",
         imagem: "img/itens_img/adagas-card-img/Akbitanan-Blades.webp"
     },
     {
@@ -145,7 +149,7 @@ const adagas = [
         dano_maximo: 28,
         durabilidade: 810,
         peso: 2.82,
-        efeito: "s/lentidão",
+        efeito: "sangramento / lentidão",
         imagem: "img/itens_img/adagas-card-img/brutish-adaga.webp"
     },
     {
@@ -157,7 +161,7 @@ const adagas = [
         dano_maximo: 35,
         durabilidade: 750,
         peso: 2.70,
-        efeito: "s/lentidão",
+        efeito: "sangramento / lentidão",
         imagem: "img/itens_img/adagas-card-img/mil-mordidas-adaga.webp"
     },
     {
@@ -169,7 +173,7 @@ const adagas = [
         dano_maximo: 55,
         durabilidade: 3600,
         peso: 2.45,
-        efeito: "s/lentidão",
+        efeito: "sangramento / lentidão",
         imagem: "img/itens_img/adagas-card-img/mil-mordidas-adaga.webp"
     },
     {
@@ -181,7 +185,7 @@ const adagas = [
         dano_maximo: 50,
         durabilidade: 1800,
         peso: 2.45,
-        efeito: "s/lent/adoecer",
+        efeito: "sangramento / lentidão / adoecer",
         imagem: "img/itens_img/adagas-card-img/Diseased-Knives.webp"
     },
     {
@@ -193,7 +197,7 @@ const adagas = [
         dano_maximo: 38,
         durabilidade: 900,
         peso: 1.72,
-        efeito: "s/lentidão",
+        efeito: "sangramento / lentidão",
         imagem: "img/itens_img/adagas-card-img/goblin-fangs.webp"
     },
     {
@@ -205,7 +209,7 @@ const adagas = [
         dano_maximo: 55,
         durabilidade: 600,
         peso: 2.45,
-        efeito: "s/lentidão",
+        efeito: "sangramento / lentidão",
         imagem: "img/itens_img/adagas-card-img/gremlin-fangs.webp"
     },
     {
@@ -217,7 +221,7 @@ const adagas = [
         dano_maximo: 49,
         durabilidade: 1800,
         peso: 2.45,
-        efeito: "s/lent/executar",
+        efeito: "sangramentro / lentidão / executar",
         imagem: "img/itens_img/adagas-card-img/gremlin-fangs.webp"
     },
     {
@@ -229,7 +233,7 @@ const adagas = [
         dano_maximo: 58,
         durabilidade: 1800,
         peso: 2.45,
-        efeito: "s/lent/executar",
+        efeito: "sangramento / lentidão / executar",
         imagem: "img/itens_img/adagas-card-img/brutish-adaga.webp"
     },
     {
@@ -241,7 +245,7 @@ const adagas = [
         dano_maximo: 49,
         durabilidade: 1800,
         peso: 4.90,
-        efeito: "s/lentidão",
+        efeito: "sangramento / lentidão",
         imagem: "img/itens_img/adagas-card-img/Jhebbal-Sag's.webp"
     },
     {
@@ -253,7 +257,7 @@ const adagas = [
         dano_maximo: 51,
         durabilidade: 7200,
         peso: 2.45,
-        efeito: "s/lent/envenenar",
+        efeito: "sangramento / lentidão / envenenar",
         imagem: "img/itens_img/adagas-card-img/brutish-adaga.webp"
     },
     {
@@ -265,7 +269,7 @@ const adagas = [
         dano_maximo: 31,
         durabilidade: 900,
         peso: 2.21,
-        efeito: "s/lentidão",
+        efeito: "sangramento / lentidão",
         imagem: "img/itens_img/adagas-card-img/gremlin-fangs.webp"
     },
     {
@@ -277,7 +281,7 @@ const adagas = [
         dano_maximo: 58,
         durabilidade: 1800,
         peso: 2.45,
-        efeito: "s/lentidão",
+        efeito: "sangramento / lentidão",
         imagem: "img/itens_img/adagas-card-img/mil-mordidas-adaga.webp"
     },
     {
@@ -289,7 +293,7 @@ const adagas = [
         dano_maximo: 49,
         durabilidade: 3600,
         peso: 2.45,
-        efeito: "s/lentidão",
+        efeito: "sangramento / lentidão",
         imagem: "img/itens_img/adagas-card-img/Pristine-Khari.webp"
     },
     {
@@ -301,7 +305,7 @@ const adagas = [
         dano_maximo: 50,
         durabilidade: 1800,
         peso: 2.45,
-        efeito: "s/lent/pilhagem",
+        efeito: "sangramento / lentidão / pilhagem",
         imagem: "img/itens_img/adagas-card-img/Set's-Tongu.webp"
     },
     {
@@ -313,7 +317,7 @@ const adagas = [
         dano_maximo: 35,
         durabilidade: 750,
         peso: 2.70,
-        efeito: "s/lent/escala dano",
+        efeito: "sangramento / lentidão / escala dano",
         imagem: "img/itens_img/adagas-card-img/The-Grim.webp"
     },
     {
@@ -325,7 +329,7 @@ const adagas = [
         dano_maximo: 50,
         durabilidade: 1800,
         peso: 2.45,
-        efeito: "s/lentidão",
+        efeito: "sangramento / lentidão",
         imagem: "img/itens_img/adagas-card-img/mil-mordidas-adaga.webp"
     },
     {
@@ -337,7 +341,7 @@ const adagas = [
         dano_maximo: 50,
         durabilidade: 1800,
         peso: 2.45,
-        efeito: "s/lent/adoecer",
+        efeito: "sangramento / lentidão / adoecer",
         imagem: "img/itens_img/adagas-card-img/Jhebbal-Sag's.webp"
     },
 ]
@@ -352,7 +356,7 @@ const espadaUmamao = [
         dano_maximo: 77,
         durabilidade: 2700,
         peso: 3.50,
-        efeito: "corrupção/lent",
+        efeito: "corrupção / lentidão",
         imagem: "img/itens_img/espadas-uma-mao-img/Icon_legendary_sword_02.webp"
     },
     {
@@ -364,7 +368,7 @@ const espadaUmamao = [
         dano_maximo: 52,
         durabilidade: 1350,
         peso: 2.45,
-        efeito: "sang/lentidão",
+        efeito: "sangramento / lentidão",
         imagem: "img/itens_img/espadas-uma-mao-img/Icon_HookSword.webp"
     },
     {
@@ -400,7 +404,7 @@ const espadaUmamao = [
         dano_maximo: 69,
         durabilidade: 2700,
         peso: 3.50,
-        efeito: "lentidão/força",
+        efeito: "lentidão / força",
         imagem: "img/itens_img/espadas-uma-mao-img/Icon_legendary_sword_04.webp"
     },
     {
@@ -412,7 +416,7 @@ const espadaUmamao = [
         dano_maximo: 77,
         durabilidade: 2700,
         peso: 3.50,
-        efeito: "sangramento/lent",
+        efeito: "sangramento / lentidão",
         imagem: "img/itens_img/espadas-uma-mao-img/Icon_legendary_sword_02.webp"
     },
     {
@@ -424,7 +428,7 @@ const espadaUmamao = [
         dano_maximo: 69,
         durabilidade: 2700,
         peso: 3.50,
-        efeito: "executar/lent",
+        efeito: "executar / lentidão",
         imagem: "img/itens_img/espadas-uma-mao-img/Icon_dragonbone_sword.webp"
     },
     {
@@ -436,7 +440,7 @@ const espadaUmamao = [
         dano_maximo: 41,
         durabilidade: 2700,
         peso: 3.50,
-        efeito: "rest frio/lent",
+        efeito: "resistência ao frio / lentidão",
         imagem: "img/itens_img/espadas-uma-mao-img/Icon_sewerbeast_sword.webp"
     },
     {
@@ -448,7 +452,7 @@ const espadaUmamao = [
         dano_maximo: 59,
         durabilidade: 2700,
         peso: 0.10,
-        efeito: "corrupção/lent",
+        efeito: "corrupção / lentidão",
         imagem: "img/itens_img/espadas-uma-mao-img/Icon_WightSword.webp"
     },
     {
@@ -460,7 +464,7 @@ const espadaUmamao = [
         dano_maximo: 68,
         durabilidade: 10800,
         peso: 3.50,
-        efeito: "envenenar/lent",
+        efeito: "envenenar / lentidão",
         imagem: "img/itens_img/espadas-uma-mao-img/Icon_dragonbone_sword.webp"
     },
     {
@@ -484,7 +488,7 @@ const espadaUmamao = [
         dano_maximo: 45,
         durabilidade: 1125,
         peso: 3.85,
-        efeito: "sangramento/lent",
+        efeito: "sangramento / lentidão",
         imagem: "img/itens_img/espadas-uma-mao-img/Icon_cutlass.webp"
     },
     {
@@ -496,7 +500,7 @@ const espadaUmamao = [
         dano_maximo: 69,
         durabilidade: 2700,
         peso: 3.50,
-        efeito: "dano espectral/lent",
+        efeito: "dano espectral / lentidão",
         imagem: "img/itens_img/espadas-uma-mao-img/Icon_legendary_sword_02.webp"
     },
     {
@@ -532,7 +536,7 @@ const espadaUmamao = [
         dano_maximo: 1,
         durabilidade: 2700,
         peso: 3.50,
-        efeito: "lent/predador",
+        efeito: "lentidão / predador",
         imagem: "img/itens_img/espadas-uma-mao-img/Icon_legendary_sword_04.webp"
     },
     {
@@ -544,7 +548,7 @@ const espadaUmamao = [
         dano_maximo: 69,
         durabilidade: 2700,
         peso: 3.50,
-        efeito: "dano fantasma/lent",
+        efeito: "dano fantasma / lentidão",
         imagem: "img/itens_img/espadas-uma-mao-img/Icon_legendary_sword_03.webp"
     },
     {
@@ -571,7 +575,7 @@ const espadasCurtas = [
         dano_maximo: 81,
         durabilidade: 2700,
         peso: 5.25,
-        efeito: "sang/executar",
+        efeito: "sangramento / executar",
         imagem: "img/itens_img/espadas-curtas-img/Icon_elder_shortsword.webp"
     },
     {
@@ -583,7 +587,7 @@ const espadasCurtas = [
         dano_maximo: 81,
         durabilidade: 2700,
         peso: 5.25,
-        efeito: "sang/lentidão",
+        efeito: "sangramento / lentidão",
         imagem: "img/itens_img/espadas-curtas-img/Icon_gladius_iron.webp"
     },
     {
@@ -646,7 +650,7 @@ const espadasDuasMaos = [
         dano_maximo: 81,
         durabilidade: 3600,
         peso: 5.25,
-        efeito: "lent/sangramento",
+        efeito: "lentidão / sangramento",
         imagem: "img/itens_img/espadas-duas-maos-img/Icon_obsidian_2h_sword.webp"
     },
     {
@@ -670,7 +674,7 @@ const espadasDuasMaos = [
         dano_maximo: 95,
         durabilidade: 3600,
         peso: 5.25,
-        efeito: "lent/separar",
+        efeito: "lentidão / separar",
         imagem: "img/itens_img/espadas-duas-maos-img/Icon_acheron_2h_sword.webp"
     },
     {
@@ -706,7 +710,7 @@ const espadasDuasMaos = [
         dano_maximo: 88,
         durabilidade: 3600,
         peso: 10.50,
-        efeito: "lent/corte papel",
+        efeito: "lentidão / corte papel",
         imagem: "img/itens_img/espadas-duas-maos-img/Icon_legendary_2hSword_03.webp"
     },
     {
@@ -733,7 +737,7 @@ const machadosUmaMao = [
         dano_maximo: 78,
         durabilidade: 2700,
         peso: 4.03,
-        efeito: "lent/sang/esmaga escudo",
+        efeito: "lentidão / sangramento / esmaga escudo",
         imagem: "img/itens_img/machado-uma-mao-img/Icon_ancient_axe.webp"
     },
     {
@@ -745,7 +749,7 @@ const machadosUmaMao = [
         dano_maximo: 78,
         durabilidade: 2700,
         peso: 4.03,
-        efeito: "lent/sang/esmaga escudo",
+        efeito: "lentidão / sangramento / esmaga escudo",
         imagem: "img/itens_img/machado-uma-mao-img/Icon_khari_axe.webp"
     },
     {
@@ -757,7 +761,7 @@ const machadosUmaMao = [
         dano_maximo: 78,
         durabilidade: 2700,
         peso: 4.03,
-        efeito: "lent/sang/esmaga escudo/separar",
+        efeito: "lentidão / sangramento / esmaga escudo / separar",
         imagem: "img/itens_img/machado-uma-mao-img/Icon_legendary_waraxe_02.webp"
     },
     {
@@ -769,7 +773,7 @@ const machadosUmaMao = [
         dano_maximo: 1,
         durabilidade: 2700,
         peso: 4.03,
-        efeito: "lent/sang/esmaga escudo/predador",
+        efeito: "lentidão / sangramento / esmaga escudo / predador",
         imagem: "img/itens_img/machado-uma-mao-img/Icon_legendary_waraxe_02.webp"
     },
     {
@@ -781,7 +785,7 @@ const machadosUmaMao = [
         dano_maximo: 70,
         durabilidade: 2700,
         peso: 4.03,
-        efeito: "lent/sang/esmaga escudo/separar",
+        efeito: "lentidão / sangramento / esmaga escudo / separar",
         imagem: "img/itens_img/machado-uma-mao-img/Icon_legendary_waraxe_04.webp"
     },
     {
@@ -793,7 +797,7 @@ const machadosUmaMao = [
         dano_maximo: 70,
         durabilidade: 2700,
         peso: 4.03,
-        efeito: "lent/sang/esmaga escudo/corrupção",
+        efeito: "lentidão / sangramento / esmaga escudo / corrupção",
         imagem: "img/itens_img/machado-uma-mao-img/Icon_legendary_waraxe_04.webp"
     },
     {
@@ -805,7 +809,7 @@ const machadosUmaMao = [
         dano_maximo: 70,
         durabilidade: 2700,
         peso: 4.03,
-        efeito: "lent/sang/executar",
+        efeito: "lentidão / sangramento / executar",
         imagem: "img/itens_img/machado-uma-mao-img/Icon_dragonbone_waraxe.webp"
     },
     {
@@ -817,7 +821,7 @@ const machadosUmaMao = [
         dano_maximo: 70,
         durabilidade: 2700,
         peso: 0.10,
-        efeito: "lent/sang/esmaga escudo/corrupção",
+        efeito: "lentidão / sangramento / esmaga escudo / corrupção",
         imagem: "img/itens_img/machado-uma-mao-img/Icon_WightAxe.webp"
     },
     {
@@ -829,7 +833,7 @@ const machadosUmaMao = [
         dano_maximo: 78,
         durabilidade: 2700,
         peso: 1.00,
-        efeito: "lent/sang/esmaga escudo",
+        efeito: "lentidão /sangramento / esmaga escudo",
         imagem: "img/itens_img/machado-uma-mao-img/Icon_legendary_waraxe_03.webp"
     },
     {
@@ -841,7 +845,7 @@ const machadosUmaMao = [
         dano_maximo: 78,
         durabilidade: 2700,
         peso: 4.03,
-        efeito: "lent/sang/esmaga escudo",
+        efeito: "lentidão / sangramento / esmaga escudo",
         imagem: "img/itens_img/machado-uma-mao-img/Icon_khari_axe.webp"
     },
     {
@@ -853,7 +857,7 @@ const machadosUmaMao = [
         dano_maximo: 78,
         durabilidade: 900,
         peso: 4.03,
-        efeito: "lent/sang/esmaga escudo",
+        efeito: "lentidão / sangramento / esmaga escudo",
         imagem: "img/itens_img/machado-uma-mao-img/Icon_elder_waraxe.webp"
     },
     {
@@ -865,7 +869,7 @@ const machadosUmaMao = [
         dano_maximo: 78,
         durabilidade: 900,
         peso: 4.03,
-        efeito: "lent/sang/esmaga escudo",
+        efeito: "lentidão /sangramento / esmaga escudo",
         imagem: "img/itens_img/machado-uma-mao-img/Icon_elder_waraxe.webp"
     },
     {
@@ -877,7 +881,7 @@ const machadosUmaMao = [
         dano_maximo: 69,
         durabilidade: 2700,
         peso: 8.05,
-        efeito: "lent/sang/esmaga escudo",
+        efeito: "lentidão / sangramento / esmaga escudo",
         imagem: "img/itens_img/machado-uma-mao-img/Icon_legendary_waraxe_01.webp"
     },
     {
@@ -889,7 +893,7 @@ const machadosUmaMao = [
         dano_maximo: 69,
         durabilidade: 900,
         peso: 4.03,
-        efeito: "lent/sang/esmaga escudo",
+        efeito: "lentidão /sangramento / esmaga escudo",
         imagem: "img/itens_img/machado-uma-mao-img/Icon_elder_waraxe.webp"
     },
     {
@@ -901,7 +905,7 @@ const machadosUmaMao = [
         dano_maximo: 47,
         durabilidade: 'infinita',
         peso: 3.62,
-        efeito: "lent/sang/esmaga escudo/corrupção",
+        efeito: "lentidão / sangramento / esmaga escudo / corrupção",
         imagem: "img/itens_img/machado-uma-mao-img/Icon_WightAxe.webp"
     },
     {
@@ -913,7 +917,7 @@ const machadosUmaMao = [
         dano_maximo: 73,
         durabilidade: 900,
         peso: 8.05,
-        efeito: "lent/sang/esmaga escudo",
+        efeito: "lentidão / sangramento / esmaga escudo",
         imagem: "img/itens_img/machado-uma-mao-img/Icon_legendary_waraxe_05.webp"
     },
     {
@@ -925,7 +929,7 @@ const machadosUmaMao = [
         dano_maximo: 70,
         durabilidade: 900,
         peso: 4.03,
-        efeito: "lent/sang/esmaga escudo/envenenar",
+        efeito: "lentidão / sangramento / esmaga escudo / envenenar",
         imagem: "img/itens_img/machado-uma-mao-img/Icon_legendary_waraxe_05.webp"
     },
     {
@@ -937,7 +941,7 @@ const machadosUmaMao = [
         dano_maximo: 56,
         durabilidade: 2700,
         peso: 4.03,
-        efeito: "lent/sang/esmaga escudo",
+        efeito: "lentidão / sangramento / esmaga escudo",
         imagem: "img/itens_img/machado-uma-mao-img/Icon_repair_hammer_star_metal.webp"
     },
     {
@@ -949,7 +953,7 @@ const machadosUmaMao = [
         dano_maximo: 66,
         durabilidade: 3300,
         peso: 4.55,
-        efeito: "lent/sang/esmaga escudo/ corrupção",
+        efeito: "lentidão /sangramento / esmaga escudo / corrupção",
         imagem: "img/itens_img/machado-uma-mao-img/Icon_legendary_waraxe_04.webp"
     },
 ]
@@ -964,7 +968,7 @@ const machadosDuasMaos = [
         dano_maximo: 106,
         durabilidade: 4200,
         peso: 10.50,
-        efeito: "lent/separar",
+        efeito: "lentidão / separar",
         imagem: "img/itens_img/machado-duas-maos-img/Icon_2hAxe_iron.webp"
     },
     {
@@ -976,7 +980,7 @@ const machadosDuasMaos = [
         dano_maximo: 108,
         durabilidade: 4200,
         peso: 5.25,
-        efeito: "lent/sangramento",
+        efeito: "lentidão / sangramento",
         imagem: "img/itens_img/machado-duas-maos-img/Icon_shadow_scythe.webp"
     },
     {
@@ -988,7 +992,7 @@ const machadosDuasMaos = [
         dano_maximo: 79,
         durabilidade: 4200,
         peso: 10.50,
-        efeito: "lent/sangramento",
+        efeito: "lentidão / sangramento",
         imagem: "img/itens_img/machado-duas-maos-img/Icon_shadow_scythe.webp"
     },
 ]
@@ -1003,7 +1007,7 @@ const macaUmaMao = [
         dano_maximo: 66,
         durabilidade: 3300,
         peso: 4.55,
-        efeito: "esmaga escudo/separar",
+        efeito: "esmaga escudo / separar",
         imagem: "img/itens_img/maças-uma-mao-img/Icon_legendary_mace_03.webp"
     },
     {
@@ -1015,7 +1019,7 @@ const macaUmaMao = [
         dano_maximo: 73,
         durabilidade: 3300,
         peso: 4.55,
-        efeito: "esmaga escudo/separar",
+        efeito: "esmaga escudo / separar",
         imagem: "img/itens_img/maças-uma-mao-img/Icon_stone_club-1.webp"
     },
     {
@@ -1027,7 +1031,7 @@ const macaUmaMao = [
         dano_maximo: 73,
         durabilidade: 3300,
         peso: 4.55,
-        efeito: "esmaga escudo/separar/envenenar",
+        efeito: "esmaga escudo / separar / envenenar",
         imagem: "img/itens_img/maças-uma-mao-img/Icon_shadow_mace.webp"
     },
     {
@@ -1039,7 +1043,7 @@ const macaUmaMao = [
         dano_maximo: 66,
         durabilidade: 3300,
         peso: 4.55,
-        efeito: "esmaga escudo/separar/aquecida",
+        efeito: "esmaga escudo / separar / aquecida",
         imagem: "img/itens_img/maças-uma-mao-img/Icon_legendary_mace_04.webp"
     },
     {
@@ -1051,7 +1055,7 @@ const macaUmaMao = [
         dano_maximo: 'concusão Dmg 45',
         durabilidade: 6600,
         peso: 4.55,
-        efeito: "esmaga escudo/separar/concusão",
+        efeito: "esmaga escudo / separar / concusão",
         imagem: "img/itens_img/maças-uma-mao-img/Icon_legendary_mace_02.webp"
     },
     {
@@ -1063,7 +1067,7 @@ const macaUmaMao = [
         dano_maximo: 50,
         durabilidade: 1650,
         peso: 3.19,
-        efeito: "esmaga escudo/separar",
+        efeito: "esmaga escudo / separar",
         imagem: "img/itens_img/maças-uma-mao-img/Icon_shadow_mace.webp"
     },
     {
@@ -1075,7 +1079,7 @@ const macaUmaMao = [
         dano_maximo: 66,
         durabilidade: 3300,
         peso: 4.55,
-        efeito: "esmaga escudo/separar/pilhagem",
+        efeito: "esmaga escudo / separar / pilhagem",
         imagem: "img/itens_img/maças-uma-mao-img/Icon_legendary_mace_01.webp"
     },
     {
@@ -1087,7 +1091,7 @@ const macaUmaMao = [
         dano_maximo: 94,
         durabilidade: 3300,
         peso: 9.10,
-        efeito: "esmaga escudo/separar",
+        efeito: "esmaga escudo / separar",
         imagem: "img/itens_img/maças-uma-mao-img/Icon_legendary_mace_01.webp"
     },
     {
@@ -1099,7 +1103,7 @@ const macaUmaMao = [
         dano_maximo: 73,
         durabilidade: 3300,
         peso: 4.55,
-        efeito: "esmaga escudo/separar/corrupção",
+        efeito: "esmaga escudo / separar / corrupção",
         imagem: "img/itens_img/maças-uma-mao-img/Icon_legendary_mace_04.webp"
     },
     {
@@ -1111,7 +1115,7 @@ const macaUmaMao = [
         dano_maximo: 73,
         durabilidade: 3300,
         peso: 4.55,
-        efeito: "esmaga escudo/separar",
+        efeito: "esmaga escudo / separar",
         imagem: "img/itens_img/maças-uma-mao-img/Icon_legendary_mace_03.webp"
     },
     {
@@ -1123,7 +1127,7 @@ const macaUmaMao = [
         dano_maximo: 71,
         durabilidade: 400,
         peso: 5.01,
-        efeito: "esmaga escudo/separar",
+        efeito: "esmaga escudo / separar",
         imagem: "img/itens_img/maças-uma-mao-img/Icon_legendary_mace_05.webp"
     },
     {
@@ -1135,7 +1139,7 @@ const macaUmaMao = [
         dano_maximo: 69,
         durabilidade: 1100,
         peso: 9.10,
-        efeito: "esmaga escudo/separar",
+        efeito: "esmaga escudo / separar",
         imagem: "img/itens_img/maças-uma-mao-img/Icon_legendary_mace_04.webp"
     },
     {
@@ -1147,7 +1151,7 @@ const macaUmaMao = [
         dano_maximo: 'concusão Dmg 20',
         durabilidade: 3300,
         peso: 9.10,
-        efeito: "esmaga escudo/separar/concusão",
+        efeito: "esmaga escudo / separar / concusão",
         imagem: "img/itens_img/maças-uma-mao-img/Icon_stone_club-1.webp"
     },
 ]
@@ -1174,7 +1178,7 @@ const macaDuasMaos = [
         dano_maximo: 81,
         durabilidade: 4800,
         peso: 0.10,
-        efeito: "separar/concusão",
+        efeito: "separar / concusão",
         imagem: "img/itens_img/maças-duas-maos-img/Icon_legendary_hammer_04.webp"
     },
     {
@@ -1246,7 +1250,7 @@ const macaDuasMaos = [
         dano_maximo: 65,
         durabilidade: 4800,
         peso: 5.25,
-        efeito: "separar/corrupção",
+        efeito: "separar / corrupção",
         imagem: "img/itens_img/maças-duas-maos-img/Icon_smokemonster.webp"
     },
     {
@@ -1294,7 +1298,7 @@ const macaDuasMaos = [
         dano_maximo: 81,
         durabilidade: 4800,
         peso: 10.00,
-        efeito: "separar/berserker",
+        efeito: "separar / berserker",
         imagem: "img/itens_img/maças-duas-maos-img/Icon_legendary_hammer_01.webp"
     },
     {
@@ -1306,7 +1310,7 @@ const macaDuasMaos = [
         dano_maximo: 94,
         durabilidade: 4800,
         peso: 5.25,
-        efeito: "separar/corrupção",
+        efeito: "separar / corrupção",
         imagem: "img/itens_img/maças-duas-maos-img/Icon_legendary_hammer_05.webp"
     },
     {
@@ -1318,7 +1322,7 @@ const macaDuasMaos = [
         dano_maximo: 79,
         durabilidade: 9600,
         peso: 5.25,
-        efeito: "separar/lentidão",
+        efeito: "separar / lentidão",
         imagem: "img/itens_img/maças-duas-maos-img/Icon_legendary_hammer_05.webp"
     },
     {
@@ -1347,7 +1351,7 @@ const lancasDuasMaos = [
         dano_maximo: 56,
         durabilidade: 2100,
         peso: 3.06,
-        efeito: "sang/lentidão/alcance",
+        efeito: "sangramento / lentidão / alcance",
         imagem: "img/itens_img/lança-duas-maos-img/Icon_hardened_steel_spear.webp"
     },
     {
@@ -1359,7 +1363,7 @@ const lancasDuasMaos = [
         dano_maximo: 78,
         durabilidade: 1120,
         peso: 4.81,
-        efeito: "sang/lentidão/alcance",
+        efeito: "sangramento / lentidão / alcance",
         imagem: "img/itens_img/lança-duas-maos-img/Icon_legendary_pike_03.webp"
     },
     {
@@ -1371,7 +1375,7 @@ const lancasDuasMaos = [
         dano_maximo: 71,
         durabilidade: 4200,
         peso: 8.75,
-        efeito: "sang/lentidão/alcance/adoecer",
+        efeito: "sangramento / lentidão / alcance / adoecer",
         imagem: "img/itens_img/lança-duas-maos-img/Icon_legendary_pike_02.webp"
     },
     {
@@ -1383,7 +1387,7 @@ const lancasDuasMaos = [
         dano_maximo: 56,
         durabilidade: 2100,
         peso: 3.06,
-        efeito: "sang/lentidão/alcance/envenenar",
+        efeito: "sangramento / lentidão / alcance / envenenar",
         imagem: "img/itens_img/lança-duas-maos-img/Icon_envenomed_pike.webp"
     },
     {
@@ -1395,7 +1399,7 @@ const lancasDuasMaos = [
         dano_maximo: 65,
         durabilidade: 4200,
         peso: 4.38,
-        efeito: "sang/lentidão/alcance/envenenar",
+        efeito: "sangramento / lentidão / alcance / envenenar",
         imagem: "img/itens_img/lança-duas-maos-img/Epic_icon_elder_spear.webp"
     },
     {
@@ -1407,7 +1411,7 @@ const lancasDuasMaos = [
         dano_maximo: 72,
         durabilidade: 4200,
         peso: 4.38,
-        efeito: "sang/lentidão/alcance",
+        efeito: "sangramento / lentidão / alcance",
         imagem: "img/itens_img/lança-duas-maos-img/Icon_legendary_pike_05.webp"
     },
     {
@@ -1419,7 +1423,7 @@ const lancasDuasMaos = [
         dano_maximo: 71,
         durabilidade: 16800,
         peso: 4.38,
-        efeito: "sang/lentidão/alcance/envenenar",
+        efeito: "sangramento / lentidão / alcance / envenenar",
         imagem: "img/itens_img/lança-duas-maos-img/Icon_dragonbone_spear.webp"
     },
     {
@@ -1431,7 +1435,7 @@ const lancasDuasMaos = [
         dano_maximo: 80,
         durabilidade: 4200,
         peso: 4.38,
-        efeito: "sang/lentidão/alcance/corrupção",
+        efeito: "sangramento / lentidão / alcance / corrupção",
         imagem: "img/itens_img/lança-duas-maos-img/Icon_legendary_mitra_spear.webp"
     },
     {
@@ -1443,7 +1447,7 @@ const lancasDuasMaos = [
         dano_maximo: 71,
         durabilidade: 4200,
         peso: 8.75,
-        efeito: "sang/lentidão/alcance",
+        efeito: "sangramento / lentidão / alcance",
         imagem: "img/itens_img/lança-duas-maos-img/Icon_serpentmen_spear.webp"
     },
     {
@@ -1455,7 +1459,7 @@ const lancasDuasMaos = [
         dano_maximo: 43,
         durabilidade: 4200,
         peso: 8.75,
-        efeito: "sang/lentidão/alcance/concusão",
+        efeito: "sangramento / lentidão / alcance / concusão",
         imagem: "img/itens_img/lança-duas-maos-img/Icon_legendary_pike_05.webp"
     },
     {
@@ -1467,7 +1471,7 @@ const lancasDuasMaos = [
         dano_maximo: 72,
         durabilidade: 4200,
         peso: 4.38,
-        efeito: "sang/lentidão/alcance/arrancar",
+        efeito: "sangramento / lentidão / alcance / arrancar",
         imagem: "img/itens_img/lança-duas-maos-img/Icon_legendary_pike_04.webp"
     },
     {
@@ -1479,7 +1483,7 @@ const lancasDuasMaos = [
         dano_maximo: 72,
         durabilidade: 4200,
         peso: 4.38,
-        efeito: "sang/lentidão/alcance",
+        efeito: "sangramento / lentidão / alcance",
         imagem: "img/itens_img/lança-duas-maos-img/Icon_legendary_pike_05.webp"
     },
     {
@@ -1491,7 +1495,7 @@ const lancasDuasMaos = [
         dano_maximo: 61,
         durabilidade: 4200,
         peso: 4.38,
-        efeito: "sang/lentidão/alcance",
+        efeito: "sangramento / lentidão / alcance",
         imagem: "img/itens_img/lança-duas-maos-img/Icon_legendary_pike_01.webp"
     },
 ]
@@ -1595,21 +1599,651 @@ const arcos = [
     },
     {
         id: 9,
-        nome: "Frostshot",
+        nome: "Hollowbone",
         atributo: "agilidade",
         penetração: 9.9,
+        dano_minimo: 28,
+        dano_maximo: 28,
+        durabilidade: 3000,
+        peso: 7.00,
+        efeito: "osso oco",
+        imagem: "img/itens_img/arcos-img/Icon_dragonhorn_bow_black.webp"
+    },
+    {
+        id: 10,
+        nome: "The Moonlight",
+        atributo: "agilidade",
+        penetração: 9.45,
         dano_minimo: 26,
         dano_maximo: 26,
         durabilidade: 3000,
+        peso: 3.50,
+        efeito: "nenhum",
+        imagem: "img/itens_img/arcos-img/Icon_shadow_bow.webp"
+    },
+    {
+        id: 10,
+        nome: "Pristine Khari ",
+        atributo: "agilidade",
+        penetração: 9,
+        dano_minimo: 29,
+        dano_maximo: 29,
+        durabilidade: 3000,
+        peso: 3.50,
+        efeito: "nenhum",
+        imagem: "img/itens_img/arcos-img/Icon_shadow_bow.webp"
+    },
+    {
+        id: 11,
+        nome: "Red Mother",
+        atributo: "agilidade",
+        penetração: 9,
+        dano_minimo: 34,
+        dano_maximo: 34,
+        durabilidade: 1000,
         peso: 7.00,
         efeito: "nenhum",
-        imagem: "img/itens_img/arcos-img/Icon_legendary_bow_03.webp"
+        imagem: "img/itens_img/arcos-img/Icon_dragonhorn_bow.webp"
+    },
+    {
+        id: 12,
+        nome: "Splinter",
+        atributo: "agilidade",
+        penetração: 0,
+        dano_minimo: 31,
+        dano_maximo: 31,
+        durabilidade: 3000,
+        peso: 3.50,
+        efeito: "nenhum",
+        imagem: "img/itens_img/arcos-img/Icon_legendary_bow_04.webp"
+    },
+    {
+        id: 13,
+        nome: "The Huntress",
+        atributo: "agilidade",
+        penetração: 9.45,
+        dano_minimo: 26,
+        dano_maximo: 26,
+        durabilidade: 3000,
+        peso: 3.50,
+        efeito: "nenhum",
+        imagem: "img/itens_img/arcos-img/Icon_legendary_bow_05.webp"
+    },
+]
+
+const diversos =[
+    {
+        id: 1,
+        nome: "Berserker Fistblades",
+        atributo: "agilidade",
+        penetração: 9,
+        dano_minimo: 52,
+        dano_maximo: 58,
+        durabilidade: 1800,
+        peso: 3.06,
+        efeito: "sangramento",
+        imagem: "img/itens_img/diversos-img/Icon_pvp_chakram_02.webp"
+    },
+    {
+        id: 2,
+        nome: "Blood-Moon",
+        atributo: "agilidade",
+        penetração: 8.1,
+        dano_minimo: 31,
+        dano_maximo: 34,
+        durabilidade: 900,
+        peso: 2.76,
+        efeito: "sangramento",
+        imagem: "img/itens_img/diversos-img/Icon_bloodmoon_chakram.webp"
+    },
+    {
+        id: 3,
+        nome: "Brittle Edge",
+        atributo: "agilidade",
+        penetração: 27,
+        dano_minimo: 32,
+        dano_maximo: 35,
+        durabilidade: 480,
+        peso: 1.53,
+        efeito: "sangramento / adoecer",
+        imagem: "img/itens_img/diversos-img/Icon_pvp_chakram_03.webp"
+    },
+    {
+        id: 4,
+        nome: "Rip and Tear",
+        atributo: "agilidade",
+        penetração: 9,
+        dano_minimo: 46,
+        dano_maximo: 51,
+        durabilidade: 3600,
+        peso: 1.53,
+        efeito: "sangramento / separar",
+        imagem: "img/itens_img/diversos-img/Icon_pvp_chakram_04.webp"
+    },
+    {
+        id: 5,
+        nome: "Bestial Claws",
+        atributo: "agilidade",
+        penetração: 8.1,
+        dano_minimo: 33,
+        dano_maximo: 36,
+        durabilidade: 900,
+        peso: 2.76,
+        efeito: "sangramento",
+        imagem: "img/itens_img/diversos-img/Icon_glove_wolf.webp"
+    },
+    {
+        id: 6,
+        nome: "Black Claws",
+        atributo: "agilidade",
+        penetração: 9,
+        dano_minimo: 52,
+        dano_maximo: 58,
+        durabilidade: 1800,
+        peso: 3.06,
+        efeito: "sangramento / ácido",
+        imagem: "img/itens_img/diversos-img/Icon_glove_wolf_black.webp"
+    },
+    {
+        id: 7,
+        nome: "Blooded Claws",
+        atributo: "agilidade",
+        penetração: 9,
+        dano_minimo: 49,
+        dano_maximo: 54,
+        durabilidade: 3600,
+        peso: 3.06,
+        efeito: "sangramento",
+        imagem: "img/itens_img/diversos-img/Icon_glove_wolf.webp"
+    },
+    {
+        id: 8,
+        nome: "Wolf Claws",
+        atributo: "agilidade",
+        penetração: 9,
+        dano_minimo: 52,
+        dano_maximo: 58,
+        durabilidade: 1800,
+        peso: 3.06,
+        efeito: "sangramento",
+        imagem: "img/itens_img/diversos-img/Icon_glove_wolf.webp"
+    },
+    {
+        id: 9,
+        nome: "Hunger Blades",
+        atributo: "agilidade",
+        penetração: 19.8,
+        dano_minimo: 44,
+        dano_maximo: 49,
+        durabilidade: 1800,
+        peso: 4.90,
+        efeito: "sangramento / adoecer / aleijar",
+        imagem: "img/itens_img/diversos-img/Icon_elder_waraxe.webp"
+    },
+    {
+        id: 10,
+        nome: "War Sickles",
+        atributo: "agilidade",
+        penetração: 18,
+        dano_minimo: 44,
+        dano_maximo: 49,
+        durabilidade: 3600,
+        peso: 2.45,
+        efeito: "sangramento / executar / aleijar",
+        imagem: "img/itens_img/diversos-img/Icon_star_metal_sickle.webp"
+    },
+    {
+        id: 11,
+        nome: "Blood-Moon",
+        atributo: "agilidade",
+        penetração: 9,
+        dano_minimo: 38,
+        dano_maximo: 38,
+        durabilidade: 900,
+        peso: 2.14,
+        efeito: "sangramento",
+        imagem: "img/itens_img/diversos-img/Icon_bloodmoon_punchingdagger.webp"
+    },
+    {
+        id: 11,
+        nome: "Blood-Moon",
+        atributo: "agilidade",
+        penetração: 9,
+        dano_minimo: 38,
+        dano_maximo: 38,
+        durabilidade: 900,
+        peso: 2.14,
+        efeito: "sangramento",
+        imagem: "img/itens_img/diversos-img/Icon_bloodmoon_punchingdagger.webp"
+    },
+    {
+        id: 12,
+        nome: "Diseased Spike",
+        atributo: "agilidade",
+        penetração: 9.9,
+        dano_minimo: 46,
+        dano_maximo: 51,
+        durabilidade: 1800,
+        peso: 6.13,
+        efeito: "sangramento / adoecer",
+        imagem: "img/itens_img/diversos-img/Icon_pvp_punching_dagger_03.webp"
+    },
+    {
+        id: 13,
+        nome: "Knave's Knives",
+        atributo: "agilidade",
+        penetração: 8.1,
+        dano_minimo: 41,
+        dano_maximo: 45,
+        durabilidade: 1800,
+        peso: 3.06,
+        efeito: "sangramento",
+        imagem: "img/itens_img/diversos-img/Icon_pvp_punching_dagger_02.webp"
+    },
+    {
+        id: 14,
+        nome: "Nimblefinger",
+        atributo: "agilidade",
+        penetração: 100,
+        dano_minimo: 20,
+        dano_maximo: 22,
+        durabilidade: 1800,
+        peso: 3.06,
+        efeito: "sangramento",
+        imagem: "img/itens_img/diversos-img/Icon_pvp_punching_dagger_04.webp"
+    },
+    {
+        id: 15,
+        nome: "Akbitanan",
+        atributo: "agilidade",
+        penetração: 0,
+        dano_minimo: 71,
+        dano_maximo: 78,
+        durabilidade: '10 unidades',
+        peso: 1.00,
+        efeito: "arremessar",
+        imagem: "img/itens_img/diversos-img/Icon_legendary_daggers_03.webp"
+    },
+    {
+        id: 15,
+        nome: "Red Mother Fangs",
+        atributo: "agilidade",
+        penetração: 0,
+        dano_minimo: 47,
+        dano_maximo: 52,
+        durabilidade: '10 unidades',
+        peso: 1.00,
+        efeito: "arremessar / sangramento",
+        imagem: "img/itens_img/diversos-img/Icon_dragonhorn_throwing_axe.webp"
+    },
+    {
+        id: 16,
+        nome: "Throwing Chakram",
+        atributo: "agilidade",
+        penetração: 0,
+        dano_minimo: 53,
+        dano_maximo: 58,
+        durabilidade: '20 unidades',
+        peso: 4.03,
+        efeito: "arremessar",
+        imagem: "img/itens_img/diversos-img/Icon_pvp_chakram_01.webp"
+    },
+    {
+        id: 17,
+        nome: "Unwelcome Gift",
+        atributo: "agilidade",
+        penetração: 0,
+        dano_minimo: 33,
+        dano_maximo: 37,
+        durabilidade: '20 unidades',
+        peso: 1.00,
+        efeito: "arremessar",
+        imagem: "img/itens_img/diversos-img/Icon_legendary_shield_01.webp"
+    },
+    {
+        id: 18,
+        nome: "Riptide",
+        atributo: "agilidade",
+        penetração: 18.9,
+        dano_minimo: 33,
+        dano_maximo: 37,
+        durabilidade: '10 unidades jogando/ batendo 3000',
+        peso: 1.00,
+        efeito: "arremessar / respitar na água",
+        imagem: "img/itens_img/diversos-img/Icon_hardened_steel_javelin.webp"
+    },
+    {
+        id: 19,
+        nome: "Coup de Grace",
+        atributo: "força",
+        penetração: 0,
+        dano_minimo: 40,
+        dano_maximo: 45,
+        durabilidade: 1500,
+        peso: 3.50,
+        efeito: "concussão",
+        imagem: "img/itens_img/diversos-img/Icon_truncheon_steel.webp"
+    },
+    {
+        id: 20,
+        nome: "Akbitanan Shield",
+        atributo: "escudo não possui",
+        penetração: 14.18,
+        dano_minimo: 53,
+        dano_maximo: 53,
+        durabilidade: 11000,
+        peso:0.40,
+        efeito: "esmaga escudo",
+        imagem: "img/itens_img/diversos-img/Icon_legendary_shield_02.webp"
+    },
+    {
+        id: 21,
+        nome: "Black Bruargh",
+        atributo: "escudo não possui",
+        penetração: 14.18,
+        dano_minimo: 53,
+        dano_maximo: 53,
+        durabilidade: 7500,
+        peso: 2.10,
+        efeito: "esmaga escudo / sangramento reativo",
+        imagem: "img/itens_img/diversos-img/Icon_legendary_shield_01.webp"
+    },
+    {
+        id: 22,
+        nome: "Maelstrom Bulwark",
+        atributo: "escudo não possui",
+        penetração: 14.18,
+        dano_minimo: 52,
+        dano_maximo: 52,
+        durabilidade: 15000,
+        peso: 25.00,
+        efeito: "esmaga escudo / duravel",
+        imagem: "img/itens_img/diversos-img/Icon_elder_shield.webp"
+    },
+    {
+        id: 23,
+        nome: "Mistmourn",
+        atributo: "resistência calor +20",
+        penetração: 14.18,
+        dano_minimo: 53,
+        dano_maximo: 53,
+        durabilidade: 7500,
+        peso: 2.10,
+        efeito: "esmaga escudo / isolamento termico",
+        imagem: "img/itens_img/diversos-img/Icon_legendary_shield_04.webp"
+    },
+    {
+        id: 24,
+        nome: "Scorpion Ward",
+        atributo: "resistência calor +10",
+        penetração: 14.18,
+        dano_minimo: 53,
+        dano_maximo: 53,
+        durabilidade: 11000,
+        peso: 0.42,
+        efeito: "esmaga escudo",
+        imagem: "img/itens_img/diversos-img/Icon_carapace_shield.webp"
+    },
+    {
+        id: 25,
+        nome: "Kutamun Shield",
+        atributo: "escudo não possui",
+        penetração: 14.18,
+        dano_minimo: 52,
+        dano_maximo: 52,
+        durabilidade: 15000,
+        peso: 2.10,
+        efeito: "esmaga escudo / durabilidade",
+        imagem: "img/itens_img/diversos-img/Icon_legendary_shield_03.webp"
+    },
+    {
+        id: 26,
+        nome: "Solspeil",
+        atributo: "resistência ao frio +20",
+        penetração: 14.18,
+        dano_minimo: 53,
+        dano_maximo: 53,
+        durabilidade: 7500,
+        peso: 2.10,
+        efeito: "esmaga escudo / isolamento termico",
+        imagem: "img/itens_img/diversos-img/Icon_legendary_shield_05.webp"
+    },
+    {
+        id: 27,
+        nome: "Ymir's Targe",
+        atributo: "resistência ao calor +10",
+        penetração: 13.5,
+        dano_minimo: 52,
+        dano_maximo: 52,
+        durabilidade: 15000,
+        peso: 2.10,
+        efeito: "esmaga escudo / durabilidade",
+        imagem: "img/itens_img/diversos-img/Icon_legendary_shield_01.webp"
+    },
+]
+
+const armadurasPesadas = [
+    {
+        id: 1,
+        nome: "Executioner Hood",
+        bonus: 'dano arma de força +6%',
+        armadura: 312,
+        resistencia_calor: 1,
+        resistencia_frio: 3,
+        durabilidade: 2400,
+        peso: 15.31,
+        imagem: "img/itens_img/armaduras-pesadas-img/Icon_cultist_hood.webp"
+    },
+    {
+        id: 2,
+        nome: "Helm of Kraxus",
+        bonus: 'dano arma de força +6%, dano de lacaio +8% e dano concusivo +10%',
+        armadura: 216,
+        resistencia_calor: 10,
+        resistencia_frio: 10,
+        durabilidade: 840,
+        peso: 11.48,
+        imagem: "img/itens_img/armaduras-pesadas-img/Icon_stygian_H_helmet.webp"
+    },
+    {
+        id: 3,
+        nome: "Legacy of the Nordheimers",
+        bonus: 'nenhum',
+        armadura: 216,
+        resistencia_calor: 3,
+        resistencia_frio: 15,
+        durabilidade: 2400,
+        peso: 15.31,
+        imagem: "img/itens_img/armaduras-pesadas-img/Icon_vanir_H_helmet.webp"
+    },
+    {
+        id: 4,
+        nome: "The Horned Helmet",
+        bonus: 'nenhum',
+        armadura: 312,
+        resistencia_calor: 0,
+        resistencia_frio: 0,
+        durabilidade: 5000,
+        peso: 15.31,
+        imagem: "img/itens_img/armaduras-pesadas-img/Icon_heavy_plated_leather_helmet_v2.webp"
+    },
+    {
+        id: 5,
+        nome: "War Mammoth Boots",
+        bonus: 'capacidade de carga +45',
+        armadura: 156,
+        resistencia_calor: 1,
+        resistencia_frio: 5,
+        durabilidade: 2400,
+        peso: 7.65,
+        imagem: "img/itens_img/armaduras-pesadas-img/Icon_vanir_H_boots.webp"
+    },
+    
+]
+
+const armadurasMedias = [
+    {
+        id: 1,
+        nome: "Black Feather Helm",
+        bonus: 'causa maldição ao usuário',
+        armadura: 142,
+        resistencia_calor: 0,
+        resistencia_frio: 0,
+        durabilidade: 1800,
+        peso: 7.09,
+        imagem: "img/itens_img/armaduras-medias-img/Icon_dogs_helmet.webp"
+    },
+    {
+        id: 2,
+        nome: "Commander's Chestplate",
+        bonus: 'vida +60',
+        armadura: 250,
+        resistencia_calor: 2,
+        resistencia_frio: 1,
+        durabilidade: 2700,
+        peso: 12.40,
+        imagem: "img/itens_img/armaduras-medias-img/Icon_aquil_M_chest.webp"
+    },
+    {
+        id: 3,
+        nome: "Commander's Helmet",
+        bonus: 'nenhum',
+        armadura: 143,
+        resistencia_calor: 3,
+        resistencia_frio: 1,
+        durabilidade: 1800,
+        peso: 7.09,
+        imagem: "img/itens_img/armaduras-medias-img/Icon_aquil_M_helmetA.webp"
+    },
+    {
+        id: 4,
+        nome: "Dragonscale Helm",
+        bonus: 'isolamento a calor e frio',
+        armadura: 143,
+        resistencia_calor: 20,
+        resistencia_frio: 20,
+        durabilidade: 1800,
+        peso: 7.09,
+        imagem: "img/itens_img/armaduras-medias-img/Icon_crocodile_armor_headpiece.webp"
+    },
+    {
+        id: 5,
+        nome: "Scorpion Harness",
+        bonus: 'nenhum',
+        armadura: 250,
+        resistencia_calor: 3,
+        resistencia_frio: 1,
+        durabilidade: 2700,
+        peso: 12.40,
+        imagem: "img/itens_img/armaduras-medias-img/Icon_stygian_M_chest.webp"
+    },
+    {
+        id: 6,
+        nome: "Scorpion Helm",
+        bonus: 'dano lacaio +8% e dano concussivo +10%',
+        armadura: 143,
+        resistencia_calor: 1,
+        resistencia_frio: 2,
+        durabilidade: 1800,
+        peso: 7.09,
+        imagem: "img/itens_img/armaduras-medias-img/Icon_stygian_M_helmet.webp"
+    },
+    {
+        id: 7,
+        nome: "The Nemedian",
+        bonus: 'nenhum',
+        armadura: 143,
+        resistencia_calor: 0,
+        resistencia_frio: 0,
+        durabilidade: 1800,
+        peso: 5.39,
+        imagem: "img/itens_img/armaduras-medias-img/Icon_legendary_male_nemedian_light_studded_leather_helmet.webp"
+    },
+]
+
+const armadurasLeves = [
+    {
+        id: 1,
+        nome: "Blindsight",
+        bonus: 'nenhum',
+        armadura: 6,
+        resistencia_calor: 0,
+        resistencia_frio: 0,
+        durabilidade: 190,
+        peso: 3.15,
+        imagem: "img/itens_img/armaduras-leves-img/Icon_black_hand_eyepatch.webp"
+    },
+    {
+        id: 2,
+        nome: "Exquisite Silk Leggings",
+        bonus: 'nenhum',
+        armadura: 52,
+        resistencia_calor: 5,
+        resistencia_frio: 0,
+        durabilidade: 1800,
+        peso: 3.54,
+        imagem: "img/itens_img/armaduras-leves-img/Icon_shemite_trousers.webp"
+    },
+    {
+        id: 3,
+        nome: "Exquisite Silk Shirt",
+        bonus: 'nenhum',
+        armadura: 73,
+        resistencia_calor: 5,
+        resistencia_frio: 0,
+        durabilidade: 1800,
+        peso: 4.96,
+        imagem: "img/itens_img/armaduras-leves-img/Icon_shemite_shirt.webp"
+    },
+    {
+        id: 4,
+        nome: "God Eye",
+        bonus: 'dano armas de força +6%',
+        armadura: 42,
+        resistencia_calor: 2,
+        resistencia_frio: 1,
+        durabilidade: 1200,
+        peso: 2.84,
+        imagem: "img/itens_img/armaduras-leves-img/Icon_black_hand_eyepatch.webp"
+    },
+    {
+        id: 5,
+        nome: "Mask of the Witch Doctor",
+        bonus: 'vida +40, dano lacaio +8%, dano concussivo +10%',
+        armadura: 18,
+        resistencia_calor: 3,
+        resistencia_frio: 3,
+        durabilidade: 430,
+        peso: 2.84,
+        imagem: "img/itens_img/armaduras-leves-img/Epic_icon_CorruptedMask.webp"
+    },
+    {
+        id: 6,
+        nome: "N'Gora's Eyepatch",
+        bonus: 'dano armas agilidade +6%',
+        armadura: 42,
+        resistencia_calor: 0,
+        resistencia_frio: 0,
+        durabilidade: 1200,
+        peso: 2.84,
+        imagem: "img/itens_img/armaduras-leves-img/Icon_black_hand_eyepatch.webp"
+    },
+    {
+        id: 7,
+        nome: "War-Dancer Chest",
+        bonus: 'dano armas força +6%',
+        armadura: 73,
+        resistencia_calor: 2,
+        resistencia_frio: 2,
+        durabilidade: 1800,
+        peso: 4.96,
+        imagem: "img/itens_img/armaduras-leves-img/Icon_zamorian_dancer_blouse.webp"
     },
 ]
 
 
 
-function geraCard(array, container) {
+function geraCardArmas(array, container) {
 
     array.forEach((itens) => {
         const card = document.createElement('div');
@@ -1689,10 +2323,80 @@ function geraCard(array, container) {
     })
 }
 
+function geraCardArmaduras(array, container) {
+
+    array.forEach((itens) => {
+        const card = document.createElement('div');
+        card.classList.add('card');
+        container.appendChild(card);
+
+        const titulo = document.createElement('h3');
+        titulo.classList.add('titulo-card');
+        titulo.innerHTML = itens.nome;
+        card.appendChild(titulo);
+
+        const imagem = document.createElement('img');
+        imagem.src = itens.imagem;
+        imagem.classList.add('imagem-card');
+        card.appendChild(imagem);
+
+        const bonus = document.createElement('p');
+        bonus.innerHTML = 'bonus: ';
+        const bonusSpan = document.createElement('span');
+        bonusSpan.innerHTML = itens.bonus;
+        bonus.appendChild(bonusSpan);
+        card.appendChild(bonus);
+
+        const armadura = document.createElement('p');
+        armadura.innerHTML = 'armadura: ';
+        const armaduraSpan = document.createElement('span');
+        armaduraSpan.innerHTML = itens.armadura;
+        armadura.appendChild(armaduraSpan);
+        card.appendChild(armadura);
+
+        const resistenciaCalor = document.createElement('p');
+        resistenciaCalor.innerHTML = 'resistência calor: ';
+        const resistenciaCalorSpan = document.createElement('span');
+        resistenciaCalorSpan.innerHTML = itens.resistencia_calor;
+        resistenciaCalor.appendChild(resistenciaCalorSpan);
+        card.appendChild(resistenciaCalor);
+
+        const resistenciaFrio = document.createElement('p');
+        resistenciaFrio.innerHTML = 'resistência Frio: ';
+        const resistenciaFrioSpan = document.createElement('span');
+        resistenciaFrioSpan.innerHTML = itens.resistencia_frio;
+        resistenciaFrio.appendChild(resistenciaFrioSpan);
+        card.appendChild(resistenciaFrio);
+
+        const durabilidade = document.createElement('p');
+        durabilidade.innerHTML = 'durabilidade: ';
+        const durabilidadeSpan = document.createElement('span');
+        durabilidadeSpan.innerHTML = itens.durabilidade;
+        durabilidade.appendChild(durabilidadeSpan);
+        card.appendChild(durabilidade);
+
+        const peso = document.createElement('p');
+        peso.innerHTML = 'peso: ';
+        const pesoSpan = document.createElement('span');
+        pesoSpan.innerHTML = itens.peso;
+        peso.appendChild(pesoSpan);
+        card.appendChild(peso);
+
+        const btnAddCarrinho = document.createElement('button');
+        btnAddCarrinho.classList.add('btn-add');
+        const btnImagem = document.createElement('img');
+        btnImagem.src = "img/itens_img/bolsa-de-dinheiro.png";
+        btnAddCarrinho.appendChild(btnImagem);
+        card.appendChild(btnAddCarrinho);
+
+
+    })
+}
 
 
 
-function geraContainerArmas(armas) {
+
+function geraContainer(itens, metodo) {
     conteudoPrincipal.style.opacity = 0;
     containerConteudo.style.display = 'flex';
     const btnFecha = document.createElement('button');
@@ -1705,7 +2409,7 @@ function geraContainerArmas(armas) {
 
 
 
-    geraCard(armas, containerCard);
+    metodo(itens, containerCard);
 
 
     setInterval(() => {
@@ -1725,25 +2429,33 @@ function geraContainerArmas(armas) {
 
 
 
-btnKatanas.addEventListener('click', () => geraContainerArmas(katanas));
+btnKatanas.addEventListener('click', () => geraContainer(katanas, geraCardArmas));
 
-btnAdagas.addEventListener('click', () => geraContainerArmas(adagas));
+btnAdagas.addEventListener('click', () => geraContainer(adagas, geraCardArmas));
 
-btnEspadaUmaMao.addEventListener('click', () => geraContainerArmas(espadaUmamao));
+btnEspadaUmaMao.addEventListener('click', () => geraContainer(espadaUmamao, geraCardArmas));
 
-btnEspadasCurtas.addEventListener('click', () => geraContainerArmas(espadasCurtas));
+btnEspadasCurtas.addEventListener('click', () => geraContainer(espadasCurtas, geraCardArmas));
 
-btnEspadasDuasMaos.addEventListener('click', () => geraContainerArmas(espadasDuasMaos));
+btnEspadasDuasMaos.addEventListener('click', () => geraContainer(espadasDuasMaos, geraCardArmas));
 
-btnMachadoUmaMao.addEventListener('click', () => geraContainerArmas(machadosUmaMao));
+btnMachadoUmaMao.addEventListener('click', () => geraContainer(machadosUmaMao, geraCardArmas));
 
-btnMachadoDuasMaos.addEventListener('click', () => geraContainerArmas(machadosDuasMaos));
+btnMachadoDuasMaos.addEventListener('click', () => geraContainer(machadosDuasMaos, geraCardArmas));
 
-btnMacaUmaMao.addEventListener('click', () => geraContainerArmas(macaUmaMao));
+btnMacaUmaMao.addEventListener('click', () => geraContainer(macaUmaMao, geraCardArmas));
 
-btnMacaDuasMaos.addEventListener('click', () => geraContainerArmas(macaDuasMaos));
+btnMacaDuasMaos.addEventListener('click', () => geraContainer(macaDuasMaos, geraCardArmas));
 
-btnLanca.addEventListener('click', () => geraContainerArmas(lancasDuasMaos));
+btnLanca.addEventListener('click', () => geraContainer(lancasDuasMaos, geraCardArmas));
 
-brnArcos.addEventListener('click', () => geraContainerArmas(arcos));
+btnArcos.addEventListener('click', () => geraContainer(arcos, geraCardArmas));
+
+btnDiversos.addEventListener('click', () => geraContainer(diversos, geraCardArmas));
+
+btnArmaduraPesada.addEventListener('click', () => geraContainer(armadurasPesadas, geraCardArmaduras));
+
+btnArmaduraMedia.addEventListener('click', () => geraContainer(armadurasMedias, geraCardArmaduras));
+
+btnArmaduraLeve.addEventListener('click', () => geraContainer(armadurasLeves, geraCardArmaduras));
 

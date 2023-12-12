@@ -172,8 +172,9 @@ main {
 #container-conteudo{
     position: absolute;
     top: 660px;
-    left: 558px;
-    width: 630px;
+    left: 557px;
+    width: 690px;
+    height: 660px;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -189,8 +190,8 @@ main {
 .container-card{
     display: flex;
     flex-wrap: wrap;
-    width: 630px;
-    height: 520px;
+    width: 690px;
+    height: 660px;
     align-items: center;
     background:transparent;
     border-radius: 0 5px 5px 20px;
@@ -199,6 +200,7 @@ main {
     margin-top: 15px;
     transition: 2s ease-in-out;
 }
+
 
 .container-card::-webkit-scrollbar{
     width: 5px;
@@ -247,17 +249,17 @@ main {
 .card{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     background-image: url(../../img/itens_img/plano-fundo-\ pretoelaranja.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 255px;
-    height: 490px;
+    width: 270px;
+    height: 550px;
     border-radius: 20px;
     box-shadow: 2px 2px 10px  rgb(0, 0, 0);
     filter: drop-shadow(0 0 0.10rem lightgreen);
-    margin: 10px 0 30px 40px;
+    margin: 30px 30px 55px 40px;
     transition: 2s ease-in-out;
 }
 
@@ -267,7 +269,7 @@ main {
     font-family: 'Press Start 2P';
     color: lawngreen;
     font-size: .9em;
-    margin: 10px 0 15px 0;
+    margin: 10px 0 15px 30px;
     padding-left: 0px;
     filter: drop-shadow(0 0 0.25rem lawngreen)
 }
@@ -276,7 +278,7 @@ main {
     width: 100px;
     height: 100px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0 15px 90px;
     filter: drop-shadow(0 0 0.35rem whitesmoke)
 }
 
@@ -284,13 +286,13 @@ main {
     font-family: 'Press Start 2P';
     color: whitesmoke;
     font-size: 10px;
-    margin: 10px 5px 10px 0;
+    margin: 10px 5px 20px 0;
     padding-left: 15px;
 }
 
 .card p span{
     font-family: Arial, Helvetica, sans-serif, Courier, monospace;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bolder;
     margin-left: 20px;
     letter-spacing: 2px;
@@ -299,8 +301,7 @@ main {
 }
 
 .btn-add{
-    position: relative;
-    right: -80px;
+    margin: 0 0 0 210px;
     width: 40px;
     height: 40px;
     background-color: black;
@@ -314,7 +315,7 @@ main {
 .btn-add:active{
     position: relative;
     bottom: -4px;
-    right: -82px;
+    right: -2px;
     box-shadow: none;
 }
 
