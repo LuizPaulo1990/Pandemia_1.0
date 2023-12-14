@@ -46,9 +46,188 @@
         font-size: 1.5em;
     }
 
-    .conteudo-principal {
-        width: 300px;
+    #slider h1.titulo-especial{
+        top: 80px;
+        left: 105px;
     }
+
+    #conteudo-principal {
+        display: flex;
+        width: 350px;
+        max-height: 350px;
+        background: url(/img/pergaminho3.jfif) center center no-repeat;
+        background-size: cover;
+        border-radius: 20px 10px 10px 20px;
+        box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+        padding: 0 0 30px 0;
+        transition: .8s ease-in-out;
+        overflow-y: scroll;
+    }
+
+    #conteudo-principal::-webkit-scrollbar{
+        width: 10px;
+    }
+    
+    
+    #conteudo-principal::-webkit-scrollbar-track{
+        background: black;
+        border-radius: 0 20px 20px 0;
+        
+        
+    }
+    
+    #conteudo-principal::-webkit-scrollbar-thumb{
+        background-color: darkred;
+        border-radius: 0 20px 20px 0;
+     
+    }
+
+
+
+
+    #katana-btn {
+        width: 140px;
+        height: 60px;
+        margin:  12px auto;
+    }
+
+
+    #adaga-btn {
+        width: 140px;
+        height: 60px;
+        margin:  12px auto;
+    }
+
+    #espada-btn {
+        width: 140px;
+        height: 60px;
+        margin:  12px auto;
+    }
+
+    #espada-curta-btn {
+        width: 140px;
+        height: 60px;
+        margin:  12px auto;
+    }
+
+    #espada-curta-btn h3 {
+        top: -55px;
+    }
+
+
+    #espada-grande-btn {
+        width: 140px;
+        height: 60px;
+        margin:  12px auto;
+    }
+
+
+    #espada-grande-btn h3 {
+        font-size: 1.1em;
+    }
+
+
+    #machado-btn {
+        width: 140px;
+        height: 60px;
+        margin:  12px auto;
+    }
+
+
+    #machado-btn h3 {
+        font-size: 1.1em;
+    }
+
+
+
+    #machado-grande-btn {
+        width: 140px;
+        height: 60px;
+        margin:  12px auto;
+    }
+
+
+    #machado-grande-btn h3 {
+        font-size: 1.1em;
+    }
+
+
+
+    #maca-btn {
+        width: 140px;
+        height: 60px;
+        margin:  12px auto;
+    }
+
+
+
+    #maca-grande-btn {
+        width: 140px;
+        height: 60px;
+        margin:  12px auto;
+    }
+
+
+
+    #lanca-btn {
+        width: 140px;
+        height: 60px;
+        margin:  12px auto;
+    }
+
+
+
+    #arco-btn {
+        width: 140px;
+        height: 60px;
+        margin:  12px auto;
+    }
+
+
+
+    #diversos-btn {
+        width: 140px;
+        height: 60px;
+        margin:  12px 20px;
+    }
+
+
+
+    #armadura-pesada-btn {
+        width: 100px;
+        height: 90px;
+        margin:  12px 20px;
+    }
+
+
+    #armadura-pesada-btn h3 {
+        font-size: .9em;
+    }
+
+
+    #armadura-media-btn {
+        width: 100px;
+        height: 90px;
+        margin:  12px 20px;
+    }
+
+    #armadura-media-btn h3 {
+        font-size: .9em;
+    }
+
+
+    #armadura-leve-btn {
+        width: 100px;
+        height: 90px;
+        margin:  12px 20px;
+    }
+
+    #armadura-leve-btn h3 {
+        font-size: .9em;
+    }
+
+
+
 
 
 

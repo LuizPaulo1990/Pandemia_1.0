@@ -46,6 +46,11 @@
         font-size: 1.5em;
     }
 
+    #slider h1.titulo-especial{
+        top: 80px;
+        left: 105px;
+    }
+
     .conteudo-principal {
         width: 300px;
     }

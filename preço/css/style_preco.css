@@ -116,6 +116,7 @@ nav {
     width: 100%;
     height: 100%;
     border-radius: 15px;
+    filter: grayscale(75%);
     opacity: 0;
     transition: 2s ease-in-out;
 }
@@ -397,7 +398,7 @@ main {
 #texto-armaduras{
     background-color: aliceblue;
     width: 220px;
-    height: 128px;
+    height: 130px;
     border-radius:  20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
@@ -570,7 +571,7 @@ main {
 #texto-lacaios{
     background-color: aliceblue;
     width: 270px;
-    height: 478px;
+    height: 480px;
     border-radius:  20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
@@ -662,7 +663,7 @@ main {
 #texto-diversos{
     background-color: aliceblue;
     width: 270px;
-    height: 524px;
+    height: 525.5px;
     border-radius:  20px 20px 20px 20px;
     display: flex;
     flex-direction: column;

@@ -42,10 +42,14 @@
 
     #slider h1{
         top: 80px;
-        left: 90px;
+        left: 110px;
         font-size: 1.5em;
     }
 
+    #slider h1.titulo-especial{
+        top: 80px;
+        left: 125px;
+    }
     .conteudo-principal {
         width: 325px;
     }

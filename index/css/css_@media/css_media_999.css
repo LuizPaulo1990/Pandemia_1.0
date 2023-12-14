@@ -1,4 +1,4 @@
-@media (max-width: 999px) {
+@media (max-width: 1000px) {
 
     body {
        
@@ -9,8 +9,8 @@
         display: none;
         position: absolute;
         z-index: 2;
-        top: 80px;
-        right: 0;
+        top: 79px;
+        right: -18px;
         width: 250px;
         height: 400px;
         border-radius: 0px 0px 20px 20px;
@@ -70,14 +70,22 @@
     }
 
     #slider {
-        width: 90vh;
+        width: 1050px;
     }
     
     #slider div {
-        width:90vh;
+        width: 1050px;
     }
     
     #slider h1 {
-        left: 25vh;
+        top: 165px;
+        left: 330px;
+        font-size: 3.5em;
+    }
+
+
+    #slider h1.titulo-especial{
+        top: 165px;
+        left: 345px;
     }
 }

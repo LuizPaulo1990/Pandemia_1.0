@@ -11,7 +11,7 @@
 
     .nav-list li {
         letter-spacing: 3px;
-        margin-right: 5px;
+        margin-right: 10px;
     }
 
     .nav-list li a {
@@ -38,32 +38,20 @@
         border-radius: 0px;
     }
 
-    #texto-pets{
-        top: 745px;
-        height: 219px;
-    }
-    
-    #texto-armas{
-        top: 985px;
-        height: 129px;
+
+    #slider h1 {
+        top: 165px;
+        left: 320px;
+        font-size: 3.5em;
     }
 
-    #texto-armaduras{
-        top: 1135px;
+
+    #slider h1.titulo-especial{
+        top: 165px;
+        left: 335px;
     }
 
-    #texto-ferramentas{
-        top: 1285px; 
-        height: 129px; 
-    }
-
-    #texto-lacaios{
-        top: 1435px;
-    }
-
-    #texto-diversos{
-        top: 1935px;
-    }
+   
     
 
 }

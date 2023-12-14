@@ -11,7 +11,7 @@
 
     .nav-list li {
         letter-spacing: 3px;
-        margin-right: 5px;
+        margin-right: 10px;
     }
 
     .nav-list li a {
@@ -38,6 +38,18 @@
         border-radius: 0px;
     }
 
+
+    #slider h1 {
+        top: 165px;
+        left: 320px;
+        font-size: 3.5em;
+    }
+
+
+    #slider h1.titulo-especial{
+        top: 165px;
+        left: 335px;
+    }
     #texto-pets{
         top: 745px;
         height: 219px;

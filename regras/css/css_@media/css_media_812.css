@@ -6,16 +6,24 @@
 
     #slider {
         width: 812px;
+        height: 250px;
     }
 
     #slider div {
         width: 812px;
+        height: 250px;
     }
 
     #slider h1{
-        top: 160px;
+        top: 100px;
         left: 270px;
+        font-size: 2.5em;
        
+    }
+
+    #slider h1.titulo-especial{
+        top: 100px;
+        left: 285px;
     }
 
    

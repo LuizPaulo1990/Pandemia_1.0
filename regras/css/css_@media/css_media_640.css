@@ -25,14 +25,14 @@
 
     #slider {
         width: 640px;
-        height: 350px;
+        height: 200px;
         border-radius: 0px;
         margin-top: 0px;
     }
 
     #slider div {
         width: 640px;
-        height: 350px;
+        height: 200px;
 
     }
 
@@ -41,9 +41,14 @@
     }
 
     #slider h1{
-        top: 124px;
-        left: 180px;
-        font-size: 3em;
+        top: 70px;
+        left: 155px;
+        font-size: 2.5em;
+    }
+
+    #slider h1.titulo-especial{
+        top: 70px;
+        left: 165px;
     }
 
     #btn-conteudo-gerais {

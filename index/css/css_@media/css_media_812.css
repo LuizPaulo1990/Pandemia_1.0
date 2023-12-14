@@ -6,11 +6,23 @@
 
     #slider {
         width: 812px;
+        height: 250px;
     }
 
     #slider div {
         width: 812px;
+        height: 250px;
     }
 
+    #slider h1{
+        top: 100px;
+        left: 260px;
+       
+    }
+
+    #slider h1.titulo-especial{
+        top: 100px;
+        left: 275px;
+    }
    
 }

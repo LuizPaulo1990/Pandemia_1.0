@@ -6,34 +6,47 @@
 
     #slider {
         width: 667px;
+        height: 200px;
     }
 
     #slider div {
         width: 667px;
+        height: 200px;
+    }
+
+    #slider h1{
+        top: 80px;
+        left: 210px;
+        font-size: 2.1em;
+    }
+    
+    #slider h1.titulo-especial{
+        top: 80px;
+        left: 225px;
     }
 
     #texto-pets{
-        top: 694px;
+        top: 545px;
     }
     
     #texto-armas{
-        top: 934px;
+        top: 785px;
     }
 
     #texto-armaduras{
-        top: 1085px;
+        top: 934px;
     }
 
     #texto-ferramentas{
-        top: 1234px;  
+        top: 1085px;  
     }
 
     #texto-lacaios{
-        top: 1385px;
+        top: 1234px;
     }
 
     #texto-diversos{
-        top: 1885px;
+        top: 1735px;
     }
 
     
