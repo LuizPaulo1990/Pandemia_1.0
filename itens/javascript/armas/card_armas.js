@@ -2260,33 +2260,37 @@ function geraCardArmas(array, container) {
         imagem.classList.add('imagem-card');
         card.appendChild(imagem);
 
+        const informacao = document.createElement('div');
+        informacao.classList.add('informacao');
+        card.appendChild(informacao);
+
         const atributo = document.createElement('p');
         atributo.innerHTML = 'atributo: ';
         const atributoSpan = document.createElement('span');
         atributoSpan.innerHTML = itens.atributo;
         atributo.appendChild(atributoSpan);
-        card.appendChild(atributo);
+        informacao.appendChild(atributo);
 
         const danoMinimo = document.createElement('p');
         danoMinimo.innerHTML = 'dano mínimo: ';
         const danoMinimoSpan = document.createElement('span');
         danoMinimoSpan.innerHTML = itens.dano_minimo;
         danoMinimo.appendChild(danoMinimoSpan);
-        card.appendChild(danoMinimo);
+        informacao.appendChild(danoMinimo);
 
         const danoMaximo = document.createElement('p');
         danoMaximo.innerHTML = 'dano máximo: ';
         const danoMaximoSpan = document.createElement('span');
         danoMaximoSpan.innerHTML = itens.dano_maximo;
         danoMaximo.appendChild(danoMaximoSpan);
-        card.appendChild(danoMaximo);
+        informacao.appendChild(danoMaximo);
 
         const penetracao = document.createElement('p');
         penetracao.innerHTML = 'penetração: ';
         const penetracaoSpan = document.createElement('span');
         penetracaoSpan.innerHTML = itens.penetração + '%';
         penetracao.appendChild(penetracaoSpan);
-        card.appendChild(penetracao);
+        informacao.appendChild(penetracao);
 
 
         const efeito = document.createElement('p');
@@ -2294,7 +2298,7 @@ function geraCardArmas(array, container) {
         const efeitoSpan = document.createElement('span');
         efeitoSpan.innerHTML = itens.efeito;
         efeito.appendChild(efeitoSpan);
-        card.appendChild(efeito);
+        informacao.appendChild(efeito);
 
 
 
@@ -2303,14 +2307,14 @@ function geraCardArmas(array, container) {
         const durabilidadeSpan = document.createElement('span');
         durabilidadeSpan.innerHTML = itens.durabilidade;
         durabilidade.appendChild(durabilidadeSpan);
-        card.appendChild(durabilidade);
+        informacao.appendChild(durabilidade);
 
         const peso = document.createElement('p');
         peso.innerHTML = 'peso: ';
         const pesoSpan = document.createElement('span');
         pesoSpan.innerHTML = itens.peso;
         peso.appendChild(pesoSpan);
-        card.appendChild(peso);
+        informacao.appendChild(peso);
 
         const btnAddCarrinho = document.createElement('button');
         btnAddCarrinho.classList.add('btn-add');
@@ -2318,6 +2322,11 @@ function geraCardArmas(array, container) {
         btnImagem.src = "img/itens_img/bolsa-de-dinheiro.png";
         btnAddCarrinho.appendChild(btnImagem);
         card.appendChild(btnAddCarrinho);
+
+        
+
+        card.onclick = revelaCard;
+        
 
 
     })
@@ -2328,6 +2337,7 @@ function geraCardArmaduras(array, container) {
     array.forEach((itens) => {
         const card = document.createElement('div');
         card.classList.add('card');
+        card.onclick = revelaCard;
         container.appendChild(card);
 
         const titulo = document.createElement('h3');
@@ -2391,6 +2401,8 @@ function geraCardArmaduras(array, container) {
 
 
     })
+
+
 }
 
 
@@ -2402,10 +2414,10 @@ function geraContainer(itens, metodo) {
     const btnFecha = document.createElement('button');
     btnFecha.innerHTML = 'X';
     btnFecha.classList.add('btn-fecha');
-    containerConteudo.appendChild(btnFecha);
     const containerCard = document.createElement('div');
     containerCard.classList.add('container-card');
     containerConteudo.appendChild(containerCard);
+    containerCard.appendChild(btnFecha);
 
 
 
@@ -2424,6 +2436,18 @@ function geraContainer(itens, metodo) {
     })
 
 }
+
+
+function revelaCard(card, imagem,titulo, informacao, botaoAdd){
+    console.log('esta funcionando!');
+    card.classList.add('card-ativado');
+    titulo.classList.add('titulo-card-ativado');
+    imagem.classList.add('imagem-card-ativado');
+    informacao.classList.add('informacao-ativado');
+    botaoAdd.classList.add('btn-add-ativado');
+   
+
+} 
 
 
 
