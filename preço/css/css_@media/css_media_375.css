@@ -74,8 +74,8 @@
      
     #texto-pets{
         width: 130px;
-        height: 268px;
-        top: 545px;
+        height: 270px;
+        top: 515px;
     }
     
     #texto-pets p{
@@ -105,9 +105,9 @@
     }
     
     #texto-armas{
-        width:150px;
-        height: 128px;
-        top: 836px;
+        
+        height: 130px;
+        top: 805px;
     }
     
     #texto-armas.ativado{
@@ -134,9 +134,8 @@
     }
     
     #texto-armaduras{
-        width: 165px;
-        height: 128px;
-        top: 985px;
+        height: 130px;
+        top: 955px;
        
     }
     
@@ -177,9 +176,8 @@
     }
     
     #texto-ferramentas{
-        width: 165px;
-        height: 129px;
-        top: 1135px; 
+        height: 130px;
+        top: 1105px;
     }
     
     #texto-ferramentas.ativado{
@@ -217,9 +215,8 @@
     }
     
     #texto-lacaios{
-        width: 150px;
-        height: 408px;
-        top: 1285px;
+        height: 410px;
+        top: 1255px;
     }
     
     #texto-lacaios.ativado{
@@ -261,9 +258,8 @@
     }
     
     #texto-diversos{
-        width: 150px;
-        height: 408px;
-        top: 1715px;
+        height: 410px;
+        top: 1685px;
     }
     
     #texto-diversos.ativado{
