@@ -27,32 +27,44 @@
     }
 
     #texto-pets{
-        top: 594px;
+        top: 565px;
         height: 220px;
     }
     
     #texto-armas{
-        top: 834px;
-        height: 130.5px;
+        top: 805px;
+        height: 130px;
     }
 
     #texto-armaduras{
-        top: 985px;
+        top: 956px;
         height: 129px;
     }
 
+    #card-armaduras img.ativado{
+        width: 120px;
+        margin-top: 0;
+        margin-bottom: 23px;
+    }
+
     #texto-ferramentas{
-        top: 1134px;
+        top: 1105px;
         height: 130px; 
     }
 
+    #card-ferramentas img.ativado{
+        width: 120px;
+        margin-top: 0;
+        margin-bottom: 21px;
+    }
+
     #texto-lacaios{
-        top: 1285px;
+        top: 1255px;
     }
 
     #texto-diversos{
-        top: 1785px;
-        height: 524px;
+        top: 1755px;
+        height: 525px;
     }
 
    
