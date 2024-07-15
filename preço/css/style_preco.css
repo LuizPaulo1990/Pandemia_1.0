@@ -663,7 +663,7 @@ main {
 #texto-diversos{
     background-color: aliceblue;
     width: 270px;
-    
+    height: 525.5px;
     border-radius:  20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
