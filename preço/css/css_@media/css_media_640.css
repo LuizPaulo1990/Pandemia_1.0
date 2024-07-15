@@ -55,25 +55,43 @@
     #texto-pets{
         top: 515px;
     }
+
+
     
     #texto-armas{
-        top: 785px;
+        top: 755px;
     }
+
+
 
     #texto-armaduras{
-        top: 934px;
+        height: 130px;
+        top: 905px;
     }
+    #card-armaduras img.ativado{
+        width: 110px;
+        margin-bottom: 23px;
+    }
+
 
     #texto-ferramentas{
-        top: 1085px;  
+        top: 1055px;  
     }
+    #card-ferramentas img.ativado{
+        margin-bottom: 23px;
+    }
+
+
 
     #texto-lacaios{
-        top: 1234px;
+        top: 1205px;
     }
 
+
+
     #texto-diversos{
-        top: 1734px;
+        height: 525px;
+        top: 1705px;
     }
     
 }
