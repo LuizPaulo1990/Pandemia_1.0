@@ -1,231 +1,354 @@
 @media (max-width: 645px) {
+  nav {
+    width: 640px;
+  }
 
-    nav {
-        width: 640px;
-    }
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
 
-    .logo {
-        width: 150px;
-        height: 150px;
-    }
+  .mobile-menu {
+    left: 20px;
+  }
 
-    .mobile-menu {
-        left: 20px;
-    }
+  .nav-list {
+    width: 150px;
+    height: 300px;
+  }
 
-    .nav-list {
-        width: 150px;
-        height: 300px;
-    }
+  .nav-list li a {
+    font-size: 0.8em;
+    right: -240px;
+  }
 
-    .nav-list li a {
-        font-size: 0.8em;
-        right: -240px;
-    }
+  #slider {
+    width: 640px;
+    height: 200px;
+    border-radius: 0px;
+    margin-top: 0px;
+  }
 
-    #slider {
-        width: 640px;
-        height: 200px;
-        border-radius: 0px;
-        margin-top: 0px;
-    }
+  #slider div {
+    width: 640px;
+    height: 200px;
+  }
 
-    #slider div {
-        width: 640px;
-        height: 200px;
+  #slider img {
+    border-radius: 0px;
+  }
 
-    }
+  #slider h1 {
+    top: 70px;
+    left: 155px;
+    font-size: 2.5em;
+  }
 
-    #slider img{
-        border-radius: 0px;
-    }
+  #slider h1.titulo-especial {
+    top: 70px;
+    left: 165px;
+  }
 
-    #slider h1{
-        top: 70px;
-        left: 155px;
-        font-size: 2.5em;
-    }
+  #conteudo-principal {
+    display: flex;
+    width: 400px;
+    max-height: 350px;
+    background: url(/img/pergaminho3.jfif) center center no-repeat;
+    background-size: cover;
+    border-radius: 20px 10px 10px 20px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+    padding: 0 0 30px 0;
+    transition: 0.8s ease-in-out;
+    overflow-y: scroll;
+  }
 
-    #slider h1.titulo-especial{
-        top: 70px;
-        left: 165px;
-    }
+  #conteudo-principal::-webkit-scrollbar {
+    width: 10px;
+  }
 
+  #conteudo-principal::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 0 20px 20px 0;
+  }
 
-    #conteudo-principal {
-        display: flex;
-        width: 400px;
-        max-height: 350px;
-        background: url(/img/pergaminho3.jfif) center center no-repeat;
-        background-size: cover;
-        border-radius: 20px 10px 10px 20px;
-        box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
-        padding: 0 0 30px 0;
-        transition: .8s ease-in-out;
-        overflow-y: scroll;
-    }
+  #conteudo-principal::-webkit-scrollbar-thumb {
+    background-color: darkred;
+    border-radius: 0 20px 20px 0;
+  }
 
-    #conteudo-principal::-webkit-scrollbar{
-        width: 10px;
-    }
-    
-    
-    #conteudo-principal::-webkit-scrollbar-track{
-        background: black;
-        border-radius: 0 20px 20px 0;
-        
-        
-    }
-    
-    #conteudo-principal::-webkit-scrollbar-thumb{
-        background-color: darkred;
-        border-radius: 0 20px 20px 0;
-     
-    }
+  #container-conteudo {
+    position: absolute;
+    top: 420px;
+    left: 87px;
+    width: 404px;
+    height: 347px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #171219;
+    border-radius: 20px 5px 5px 20px;
+    border: none;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+    opacity: 0;
+    transition: 2s ease-in-out;
+  }
 
+  .container-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 404px;
+    height: 100%;
+    align-items: center;
+    background: transparent;
+    border-radius: 20px 5px 5px 20px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
+    overflow-y: scroll;
+    margin-top: 0px;
+    transition: 2s ease-in-out;
+  }
 
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 140px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    filter: drop-shadow(0 0 0.1rem lightgreen);
+    margin: 74px 25px 49px 25px;
+    transition: 2s ease-in-out;
+    cursor: pointer;
+  }
 
+  .btn-fecha {
+    position: relative;
+    top: 9px;
+    left: 105px;
+    width: 35px;
+    height: 35px;
+    margin-top: 7px;
+    margin-left: 239px;
+    background-color: black;
+    font-family: "Nosifer", sans-serif;
+    color: darkred;
+    border-radius: 5px;
+    box-shadow: 2px 3px 0 rgb(54, 52, 52);
+    border: none;
+    cursor: pointer;
+  }
 
-    #katana-btn {
-        width: 140px;
-        height: 60px;
-        margin:  12px auto;
-    }
+  .btn-fecha:active {
+    position: relative;
+    top: 11px;
+    left: 108px;
+    box-shadow: none;
+  }
 
+  .card-ativado {
+    position: relative;
+  }
 
-    #adaga-btn {
-        width: 140px;
-        height: 60px;
-        margin:  12px auto;
-    }
+  .titulo-card {
+    font-family: "Press Start 2P";
+    color: lawngreen;
+    font-size: 0.6em;
+    margin: 10px 0 0px 10px;
+    padding-left: 0px;
+    filter: drop-shadow(0 0 0.25rem lawngreen);
+  }
 
-    #espada-btn {
-        width: 140px;
-        height: 60px;
-        margin:  12px auto;
-    }
+  .titulo-card-ativado {
+    font-size: 0.9em;
+  }
 
-    #espada-curta-btn {
-        width: 140px;
-        height: 60px;
-        margin:  12px auto;
-    }
+  .imagem-card {
+    width: 87px;
+    height: 105px;
+    border-radius: 10px;
+    margin: 12px 0 0 25px;
+  }
 
-    #espada-curta-btn h3 {
-        top: -55px;
-    }
+  .imagem-card-ativado {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0 15px 90px;
+  }
 
+  .card p {
+    font-family: "Press Start 2P";
+    color: whitesmoke;
+    font-size: 10px;
+    margin: 10px 5px 20px 0;
+    padding-left: 15px;
+    display: none;
+  }
 
-    #espada-grande-btn {
-        width: 140px;
-        height: 60px;
-        margin:  12px auto;
-    }
+  .card p span {
+    font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+    font-size: 12px;
+    font-weight: bolder;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    color: lawngreen;
+    filter: drop-shadow(0 0 0.75rem lawngreen);
+  }
 
+  .btn-add {
+    margin: 0 0 0 210px;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    font-family: "Press Start 2P";
 
-    #espada-grande-btn h3 {
-        font-size: 1.1em;
-    }
+    border-radius: 5px;
+    box-shadow: 2px 4px 0 rgb(54, 52, 52);
+    cursor: pointer;
+    display: none;
+  }
 
+  .btn-add-ativado {
+    display: inline-block;
+  }
 
-    #machado-btn {
-        width: 140px;
-        height: 60px;
-        margin:  12px auto;
-    }
+  .btn-add:active {
+    position: relative;
+    bottom: -4px;
+    right: -2px;
+    box-shadow: none;
+  }
 
+  #katana-btn {
+    width: 140px;
+    height: 60px;
+    margin: 12px auto;
+  }
 
-    #machado-btn h3 {
-        font-size: 1.1em;
-    }
+  #adaga-btn {
+    width: 140px;
+    height: 60px;
+    margin: 12px auto;
+  }
 
+  #espada-btn {
+    width: 140px;
+    height: 60px;
+    margin: 12px auto;
+  }
 
+  #espada-btn h3{
+    font-size: 1.1em;
+    position: relative;
+    top: -40px;
+}
 
-    #machado-grande-btn {
-        width: 140px;
-        height: 60px;
-        margin:  12px auto;
-    }
+  #espada-curta-btn {
+    width: 140px;
+    height: 60px;
+    margin: 12px auto;
+  }
 
+  #espada-curta-btn h3 {
+    top: -35px;
+  }
 
-    #machado-grande-btn h3 {
-        font-size: 1.1em;
-    }
+  #espada-grande-btn {
+    width: 140px;
+    height: 60px;
+    margin: 12px auto;
+  }
 
+  #espada-grande-btn h3 {
+    font-size: 1.1em;
+    position: relative;
+    top: -38px;
+  }
 
+  #machado-btn {
+    width: 140px;
+    height: 60px;
+    margin: 12px auto;
+  }
 
-    #maca-btn {
-        width: 140px;
-        height: 60px;
-        margin:  12px auto;
-    }
+  #machado-btn h3 {
+    font-size: 1.1em;
+    position: relative;
+    top: -38px;
+  }
 
+  #machado-grande-btn {
+    width: 140px;
+    height: 60px;
+    margin: 12px auto;
+  }
 
+  #machado-grande-btn h3 {
+    font-size: 1em;
+    position: relative;
+    top: -35px;
+  }
 
-    #maca-grande-btn {
-        width: 140px;
-        height: 60px;
-        margin:  12px auto;
-    }
+  #maca-btn {
+    width: 140px;
+    height: 60px;
+    margin: 12px auto;
+  }
 
+  #maca-grande-btn {
+    width: 140px;
+    height: 60px;
+    margin: 12px auto;
+  }
 
+  #lanca-btn {
+    width: 140px;
+    height: 60px;
+    margin: 12px auto;
+  }
 
-    #lanca-btn {
-        width: 140px;
-        height: 60px;
-        margin:  12px auto;
-    }
+  #arco-btn {
+    width: 140px;
+    height: 60px;
+    margin: 12px auto;
+  }
 
+  #diversos-btn {
+    width: 140px;
+    height: 60px;
+    margin: 12px 20px;
+  }
 
+  #armadura-pesada-btn {
+    width: 100px;
+    height: 90px;
+    margin: 12px 10px;
+  }
 
-    #arco-btn {
-        width: 140px;
-        height: 60px;
-        margin:  12px auto;
-    }
+  #armadura-pesada-btn h3 {
+    font-size: 0.7em;
+  }
 
+  #armadura-media-btn {
+    width: 100px;
+    height: 90px;
+    margin: 12px 10px;
+  }
 
+  #armadura-media-btn h3 {
+    font-size: 0.7em;
+  }
 
-    #diversos-btn {
-        width: 140px;
-        height: 60px;
-        margin:  12px 20px;
-    }
+  #armadura-leve-btn {
+    width: 100px;
+    height: 90px;
+    margin: 12px 10px;
+  }
 
-
-
-    #armadura-pesada-btn {
-        width: 100px;
-        height: 90px;
-        margin:  12px 10px;
-    }
-
-
-    #armadura-pesada-btn h3 {
-        font-size: .9em;
-    }
-
-
-    #armadura-media-btn {
-        width: 100px;
-        height: 90px;
-        margin:  12px 10px;
-    }
-
-    #armadura-media-btn h3 {
-        font-size: .9em;
-    }
-
-
-    #armadura-leve-btn {
-        width: 100px;
-        height: 90px;
-        margin:  12px 10px;
-    }
-
-    #armadura-leve-btn h3 {
-        font-size: .9em;
-    }
-
-   
+  #armadura-leve-btn h3 {
+    font-size: 0.7em;
+  }
 }

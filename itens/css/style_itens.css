@@ -178,7 +178,7 @@ main {
 #container-conteudo{
     position: absolute;
     top: 660px;
-    left: 422px;
+    left: 475px;
     width: 690px;
     height: 649px;
     display: none;
@@ -203,7 +203,7 @@ main {
     border-radius: 20px 5px 5px 20px;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.531);
     overflow-y: scroll;
-    transition: 2s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 

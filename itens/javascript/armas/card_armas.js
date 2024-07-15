@@ -2324,7 +2324,7 @@ function geraCardArmas(array, container) {
         card.appendChild(btnAddCarrinho);
 
         
-
+        
         card.onclick = revelaCard;
         
 
@@ -2350,47 +2350,51 @@ function geraCardArmaduras(array, container) {
         imagem.classList.add('imagem-card');
         card.appendChild(imagem);
 
+        const informacao = document.createElement('div');
+        informacao.classList.add('informacao');
+        card.appendChild(informacao);
+
         const bonus = document.createElement('p');
         bonus.innerHTML = 'bonus: ';
         const bonusSpan = document.createElement('span');
         bonusSpan.innerHTML = itens.bonus;
         bonus.appendChild(bonusSpan);
-        card.appendChild(bonus);
+        informacao.appendChild(bonus);
 
         const armadura = document.createElement('p');
         armadura.innerHTML = 'armadura: ';
         const armaduraSpan = document.createElement('span');
         armaduraSpan.innerHTML = itens.armadura;
         armadura.appendChild(armaduraSpan);
-        card.appendChild(armadura);
+        informacao.appendChild(armadura);
 
         const resistenciaCalor = document.createElement('p');
         resistenciaCalor.innerHTML = 'resistência calor: ';
         const resistenciaCalorSpan = document.createElement('span');
         resistenciaCalorSpan.innerHTML = itens.resistencia_calor;
         resistenciaCalor.appendChild(resistenciaCalorSpan);
-        card.appendChild(resistenciaCalor);
+        informacao.appendChild(resistenciaCalor);
 
         const resistenciaFrio = document.createElement('p');
         resistenciaFrio.innerHTML = 'resistência Frio: ';
         const resistenciaFrioSpan = document.createElement('span');
         resistenciaFrioSpan.innerHTML = itens.resistencia_frio;
         resistenciaFrio.appendChild(resistenciaFrioSpan);
-        card.appendChild(resistenciaFrio);
+        informacao.appendChild(resistenciaFrio);
 
         const durabilidade = document.createElement('p');
         durabilidade.innerHTML = 'durabilidade: ';
         const durabilidadeSpan = document.createElement('span');
         durabilidadeSpan.innerHTML = itens.durabilidade;
         durabilidade.appendChild(durabilidadeSpan);
-        card.appendChild(durabilidade);
+        informacao.appendChild(durabilidade);
 
         const peso = document.createElement('p');
         peso.innerHTML = 'peso: ';
         const pesoSpan = document.createElement('span');
         pesoSpan.innerHTML = itens.peso;
         peso.appendChild(pesoSpan);
-        card.appendChild(peso);
+        informacao.appendChild(peso);
 
         const btnAddCarrinho = document.createElement('button');
         btnAddCarrinho.classList.add('btn-add');
@@ -2426,7 +2430,7 @@ function geraContainer(itens, metodo) {
 
     setInterval(() => {
         containerConteudo.style.opacity = 1;
-    }, 1000)
+    }, 300)
 
     btnFecha.addEventListener("click", () => {
         containerConteudo.style.display = 'none';
@@ -2440,11 +2444,13 @@ function geraContainer(itens, metodo) {
 
 function revelaCard(card, imagem,titulo, informacao, botaoAdd){
     console.log('esta funcionando!');
+    console.log(screen.width);
     card.classList.add('card-ativado');
     titulo.classList.add('titulo-card-ativado');
     imagem.classList.add('imagem-card-ativado');
     informacao.classList.add('informacao-ativado');
     botaoAdd.classList.add('btn-add-ativado');
+
    
 
 } 
