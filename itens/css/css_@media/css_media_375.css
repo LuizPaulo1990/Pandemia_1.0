@@ -1,7 +1,7 @@
 @media (max-width: 376px) {
 
     nav {
-        width: 365px;
+        width: 358px;
     }
 
     .logo {
@@ -24,14 +24,14 @@
     }
 
     #slider {
-        width: 369px;
+        width: 358px;
         height: 200px;
         border-radius: 0px;
         margin-top: 0px;
     }
 
     #slider div {
-        width: 369px;
+        width: 358px;
         height: 200px;
 
     }
@@ -53,8 +53,8 @@
 
     #conteudo-principal {
         display: flex;
-        width: 345px;
-        max-height: 350px;
+        width: 300px;
+        height: 350px;
         background: url(/img/pergaminho3.jfif) center center no-repeat;
         background-size: cover;
         border-radius: 20px 10px 10px 20px;
@@ -84,8 +84,8 @@
 
     #container-conteudo {
         position: absolute;
-        top: 413px;
-        left: 35px;
+        top: 430px;
+        left: 29px;
         width: 300px;
         height: 380px;
         display: none;
@@ -234,75 +234,80 @@
 
 
     #katana-btn {
-        width: 140px;
+        width: 120px;
         height: 60px;
         margin:  12px auto;
     }
 
 
     #adaga-btn {
-        width: 140px;
+        width: 120px;
         height: 60px;
         margin:  12px auto;
     }
 
     #espada-btn {
-        width: 140px;
+        width: 120px;
         height: 60px;
         margin:  12px auto;
     }
 
+    #espada-btn h3{
+        font-size: 1em;
+        top: -40px;
+    }
+
     #espada-curta-btn {
-        width: 140px;
+        width: 120px;
         height: 60px;
         margin:  12px auto;
     }
 
     #espada-curta-btn h3 {
-        top: -55px;
+        top: -46px;
     }
 
 
     #espada-grande-btn {
-        width: 140px;
+        width: 120px;
         height: 60px;
         margin:  12px auto;
     }
 
 
     #espada-grande-btn h3 {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
 
     #machado-btn {
-        width: 140px;
+        width: 120px;
         height: 60px;
         margin:  12px auto;
     }
 
 
     #machado-btn h3 {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
 
 
     #machado-grande-btn {
-        width: 140px;
+        width: 120px;
         height: 60px;
         margin:  12px auto;
     }
 
 
     #machado-grande-btn h3 {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
 
 
     #maca-btn {
-        width: 140px;
+        width: 120px;
         height: 60px;
         margin:  12px auto;
     }
@@ -310,7 +315,7 @@
 
 
     #maca-grande-btn {
-        width: 140px;
+        width: 120px;
         height: 60px;
         margin:  12px auto;
     }
@@ -318,7 +323,7 @@
 
 
     #lanca-btn {
-        width: 140px;
+        width: 120px;
         height: 60px;
         margin:  12px auto;
     }
@@ -326,17 +331,17 @@
 
 
     #arco-btn {
-        width: 140px;
+        width: 120px;
         height: 60px;
-        margin:  12px auto;
+        margin:  12px 0px 0px 10px;
     }
 
 
 
     #diversos-btn {
-        width: 140px;
+        width: 120px;
         height: 60px;
-        margin:  12px 20px;
+        margin:  12px 9px 9px 29px;
     }
 
 
