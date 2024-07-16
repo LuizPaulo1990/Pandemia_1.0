@@ -1,6 +1,6 @@
 @media (max-width: 645px) {
   nav {
-    width: 640px;
+    width: 625px;
   }
 
   .logo {
@@ -23,14 +23,14 @@
   }
 
   #slider {
-    width: 640px;
+    width: 625px;
     height: 200px;
     border-radius: 0px;
     margin-top: 0px;
   }
 
   #slider div {
-    width: 640px;
+    width: 625px;
     height: 200px;
   }
 
@@ -79,7 +79,7 @@
   #container-conteudo {
     position: absolute;
     top: 420px;
-    left: 87px;
+    left: 100px;
     width: 404px;
     height: 347px;
     display: none;
